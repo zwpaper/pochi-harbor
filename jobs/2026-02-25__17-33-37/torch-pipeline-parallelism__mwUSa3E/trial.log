@@ -1,0 +1,4 @@
+Trial torch-pipeline-parallelism__mwUSa3E failed: Docker compose command failed for environment torch-pipeline-parallelism. Command: docker compose -p torch-pipeline-parallelism__mwusa3e --project-directory /home/kw/.cache/harbor/tasks/K56RXLv9fW76nGzkYythKB/torch-pipeline-parallelism/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/torch-pipeline-parallelism:20251031 Pulling 
+ Image alexgshaw/torch-pipeline-parallelism:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

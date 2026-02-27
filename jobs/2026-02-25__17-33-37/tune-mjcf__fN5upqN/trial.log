@@ -1,0 +1,4 @@
+Trial tune-mjcf__fN5upqN failed: Docker compose command failed for environment tune-mjcf. Command: docker compose -p tune-mjcf__fn5upqn --project-directory /home/kw/.cache/harbor/tasks/jWu5FXBKfqdBD9LqMa9a2N/tune-mjcf/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/tune-mjcf:20251031 Pulling 
+ Image alexgshaw/tune-mjcf:20251031 Error Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

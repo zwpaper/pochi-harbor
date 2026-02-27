@@ -1,0 +1,4 @@
+Trial extract-moves-from-video__h8uXAV2 failed: Docker compose command failed for environment extract-moves-from-video. Command: docker compose -p extract-moves-from-video__h8uxav2 --project-directory /home/kw/.cache/harbor/tasks/bDZ3NNHZSFq2MH6CzCTykb/extract-moves-from-video/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/extract-moves-from-video:20251031 Pulling 
+ Image alexgshaw/extract-moves-from-video:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

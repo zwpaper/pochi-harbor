@@ -1,0 +1,4 @@
+Trial protein-assembly__Gm9ABoL failed: Docker compose command failed for environment protein-assembly. Command: docker compose -p protein-assembly__gm9abol --project-directory /home/kw/.cache/harbor/tasks/mJUNThPAPTj7sAa9DCoPrh/protein-assembly/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/protein-assembly:20251031 Pulling 
+ Image alexgshaw/protein-assembly:20251031 Error Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

@@ -1,0 +1,4 @@
+Trial rstan-to-pystan__9BqfywT failed: Docker compose command failed for environment rstan-to-pystan. Command: docker compose -p rstan-to-pystan__9bqfywt --project-directory /home/kw/.cache/harbor/tasks/869oU8dUyJHL4uUFPzhKJM/rstan-to-pystan/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/rstan-to-pystan:20251031 Pulling 
+ Image alexgshaw/rstan-to-pystan:20251031 Error Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

@@ -1,0 +1,4 @@
+Trial git-leak-recovery__LCgvDYg failed: Docker compose command failed for environment git-leak-recovery. Command: docker compose -p git-leak-recovery__lcgvdyg --project-directory /home/kw/.cache/harbor/tasks/mig33pqGgsU4uNZ5dgPebg/git-leak-recovery/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/git-leak-recovery:20251031 Pulling 
+ Image alexgshaw/git-leak-recovery:20251031 Error Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

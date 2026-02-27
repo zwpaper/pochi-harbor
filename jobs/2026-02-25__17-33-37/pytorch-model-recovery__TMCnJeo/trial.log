@@ -1,0 +1,4 @@
+Trial pytorch-model-recovery__TMCnJeo failed: Docker compose command failed for environment pytorch-model-recovery. Command: docker compose -p pytorch-model-recovery__tmcnjeo --project-directory /home/kw/.cache/harbor/tasks/axUgVSxE9sjGUEHETA9Ddx/pytorch-model-recovery/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/pytorch-model-recovery:20251031 Pulling 
+ Image alexgshaw/pytorch-model-recovery:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

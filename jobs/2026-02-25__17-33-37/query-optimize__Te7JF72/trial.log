@@ -1,0 +1,4 @@
+Trial query-optimize__Te7JF72 failed: Docker compose command failed for environment query-optimize. Command: docker compose -p query-optimize__te7jf72 --project-directory /home/kw/.cache/harbor/tasks/55spjFHXbhXqhkHUB3xfBL/query-optimize/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/query-optimize:20251031 Pulling 
+ Image alexgshaw/query-optimize:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

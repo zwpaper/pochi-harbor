@@ -1,0 +1,4 @@
+Trial bn-fit-modify__EQVh9xj failed: Docker compose command failed for environment bn-fit-modify. Command: docker compose -p bn-fit-modify__eqvh9xj --project-directory /home/kw/.cache/harbor/tasks/XX65orYkXVMqTQu7C3JUZY/bn-fit-modify/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/bn-fit-modify:20251031 Pulling 
+ Image alexgshaw/bn-fit-modify:20251031 Error Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

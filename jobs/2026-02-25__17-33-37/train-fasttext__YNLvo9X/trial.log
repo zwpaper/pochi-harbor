@@ -1,0 +1,4 @@
+Trial train-fasttext__YNLvo9X failed: Docker compose command failed for environment train-fasttext. Command: docker compose -p train-fasttext__ynlvo9x --project-directory /home/kw/.cache/harbor/tasks/QUdXqzZFwRrgRZ7SPHyxto/train-fasttext/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/train-fasttext:20251031 Pulling 
+ Image alexgshaw/train-fasttext:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

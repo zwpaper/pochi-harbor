@@ -1,0 +1,4 @@
+Trial count-dataset-tokens__SGEUn6x failed: Docker compose command failed for environment count-dataset-tokens. Command: docker compose -p count-dataset-tokens__sgeun6x --project-directory /home/kw/.cache/harbor/tasks/V8M9GUmT67TmSKo9FQTdoC/count-dataset-tokens/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/count-dataset-tokens:20251031 Pulling 
+ Image alexgshaw/count-dataset-tokens:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

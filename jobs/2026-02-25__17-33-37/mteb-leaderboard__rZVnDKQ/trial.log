@@ -1,0 +1,4 @@
+Trial mteb-leaderboard__rZVnDKQ failed: Docker compose command failed for environment mteb-leaderboard. Command: docker compose -p mteb-leaderboard__rzvndkq --project-directory /home/kw/.cache/harbor/tasks/3aN2GgseP4MfXC7ixV7cXB/mteb-leaderboard/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/mteb-leaderboard:20251031 Pulling 
+ Image alexgshaw/mteb-leaderboard:20251031 Error Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

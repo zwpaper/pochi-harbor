@@ -1,0 +1,4 @@
+Trial qemu-startup__ZguUnTG failed: Docker compose command failed for environment qemu-startup. Command: docker compose -p qemu-startup__zguuntg --project-directory /home/kw/.cache/harbor/tasks/gHS2mTGhPaYTuJWpCkw4J9/qemu-startup/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/qemu-startup:20251031 Pulling 
+ Image alexgshaw/qemu-startup:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

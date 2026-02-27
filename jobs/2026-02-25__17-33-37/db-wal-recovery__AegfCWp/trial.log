@@ -1,0 +1,4 @@
+Trial db-wal-recovery__AegfCWp failed: Docker compose command failed for environment db-wal-recovery. Command: docker compose -p db-wal-recovery__aegfcwp --project-directory /home/kw/.cache/harbor/tasks/X4QTPPGhjzjJSVbTTETRUK/db-wal-recovery/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/db-wal-recovery:20251031 Pulling 
+ Image alexgshaw/db-wal-recovery:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

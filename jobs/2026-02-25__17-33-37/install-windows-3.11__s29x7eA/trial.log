@@ -1,0 +1,4 @@
+Trial install-windows-3.11__s29x7eA failed: Docker compose command failed for environment install-windows-3.11. Command: docker compose -p install-windows-3-11__s29x7ea --project-directory /home/kw/.cache/harbor/tasks/7s8y623XYuDhmBG6ERABwC/install-windows-3.11/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/install-windows-3.11:20251031 Pulling 
+ Image alexgshaw/install-windows-3.11:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

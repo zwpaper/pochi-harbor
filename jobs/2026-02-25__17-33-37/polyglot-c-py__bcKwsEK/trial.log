@@ -1,0 +1,4 @@
+Trial polyglot-c-py__bcKwsEK failed: Docker compose command failed for environment polyglot-c-py. Command: docker compose -p polyglot-c-py__bckwsek --project-directory /home/kw/.cache/harbor/tasks/mQoDwFSymGYHYWpETANa3y/polyglot-c-py/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/polyglot-c-py:20251031 Pulling 
+ Image alexgshaw/polyglot-c-py:20251031 Error Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+. Stderr: None. 

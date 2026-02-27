@@ -1,0 +1,11 @@
+file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/@openai/codex/bin/codex.js:100
+    throw new Error(
+          ^
+
+Error: Missing optional dependency @openai/codex-linux-x64. Reinstall Codex: npm install -g @openai/codex@latest
+    at file:///root/.nvm/versions/node/v22.22.0/lib/node_modules/@openai/codex/bin/codex.js:100:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:665:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+
+Node.js v22.22.0

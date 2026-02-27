@@ -1,0 +1,4 @@
+Trial sqlite-db-truncate__taVPoka failed: Docker compose command failed for environment sqlite-db-truncate. Command: docker compose -p sqlite-db-truncate__tavpoka --project-directory /home/kw/.cache/harbor/tasks/2hEZAwigfHAA5cnDNAJvfT/sqlite-db-truncate/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/sqlite-db-truncate:20251031 Pulling 
+ Image alexgshaw/sqlite-db-truncate:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

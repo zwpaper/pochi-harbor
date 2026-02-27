@@ -1,0 +1,4 @@
+Trial compile-compcert__ffq9W4Y failed: Docker compose command failed for environment compile-compcert. Command: docker compose -p compile-compcert__ffq9w4y --project-directory /home/kw/.cache/harbor/tasks/QDMuuRtnbx7cWNzKkXsGhM/compile-compcert/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/compile-compcert:20251031 Pulling 
+ Image alexgshaw/compile-compcert:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

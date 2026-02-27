@@ -1,0 +1,4 @@
+Trial mailman__LxLwoMR failed: Docker compose command failed for environment mailman. Command: docker compose -p mailman__lxlwomr --project-directory /home/kw/.cache/harbor/tasks/oJLBu7weukw33iq9PEf26P/mailman/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/mailman:20251031 Pulling 
+ Image alexgshaw/mailman:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

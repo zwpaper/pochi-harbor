@@ -1,0 +1,4 @@
+Trial code-from-image__od6nKnT failed: Docker compose command failed for environment code-from-image. Command: docker compose -p code-from-image__od6nknt --project-directory /home/kw/.cache/harbor/tasks/KRPXswDf2LBuozQgKhCqnG/code-from-image/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/code-from-image:20251031 Pulling 
+ Image alexgshaw/code-from-image:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

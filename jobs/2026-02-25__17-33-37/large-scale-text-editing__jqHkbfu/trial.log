@@ -1,0 +1,4 @@
+Trial large-scale-text-editing__jqHkbfu failed: Docker compose command failed for environment large-scale-text-editing. Command: docker compose -p large-scale-text-editing__jqhkbfu --project-directory /home/kw/.cache/harbor/tasks/S2VRUfRKCUQ2hWH9KJzsbK/large-scale-text-editing/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/large-scale-text-editing:20251031 Pulling 
+ Image alexgshaw/large-scale-text-editing:20251031 Error Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution
+Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution
+. Stderr: None. 

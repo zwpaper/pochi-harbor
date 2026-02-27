@@ -1,0 +1,4 @@
+Trial git-multibranch__mJM8fdu failed: Docker compose command failed for environment git-multibranch. Command: docker compose -p git-multibranch__mjm8fdu --project-directory /home/kw/.cache/harbor/tasks/kLfrAkLDVW7LCezLUHt4oB/git-multibranch/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/git-multibranch:20251031 Pulling 
+ Image alexgshaw/git-multibranch:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

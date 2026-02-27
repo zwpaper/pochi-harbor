@@ -1,0 +1,4 @@
+Trial fix-ocaml-gc__HhTnFku failed: Docker compose command failed for environment fix-ocaml-gc. Command: docker compose -p fix-ocaml-gc__hhtnfku --project-directory /home/kw/.cache/harbor/tasks/dXxv47w6VWWtstSMMiefPe/fix-ocaml-gc/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/fix-ocaml-gc:20251031 Pulling 
+ Image alexgshaw/fix-ocaml-gc:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 

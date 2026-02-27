@@ -1,0 +1,4 @@
+Trial nginx-request-logging__ZQeNXCq failed: Docker compose command failed for environment nginx-request-logging. Command: docker compose -p nginx-request-logging__zqenxcq --project-directory /home/kw/.cache/harbor/tasks/eUViXxKXCzTue7ywZW59ct/nginx-request-logging/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/nginx-request-logging:20251031 Pulling 
+ Image alexgshaw/nginx-request-logging:20251031 Error Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution
+Error response from daemon: Get "https://registry-1.docker.io/v2/": dial tcp: lookup registry-1.docker.io: Temporary failure in name resolution
+. Stderr: None. 

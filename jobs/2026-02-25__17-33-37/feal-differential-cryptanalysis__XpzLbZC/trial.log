@@ -1,0 +1,4 @@
+Trial feal-differential-cryptanalysis__XpzLbZC failed: Docker compose command failed for environment feal-differential-cryptanalysis. Command: docker compose -p feal-differential-cryptanalysis__xpzlbzc --project-directory /home/kw/.cache/harbor/tasks/RyWCxfjAf9RhapMxS2dMks/feal-differential-cryptanalysis/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/feal-differential-cryptanalysis:20251031 Pulling 
+ Image alexgshaw/feal-differential-cryptanalysis:20251031 Error Get "https://registry-1.docker.io/v2/": context deadline exceeded
+Error response from daemon: Get "https://registry-1.docker.io/v2/": context deadline exceeded
+. Stderr: None. 
