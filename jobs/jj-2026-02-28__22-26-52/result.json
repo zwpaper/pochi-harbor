@@ -1,0 +1,43 @@
+{
+    "id": "08dfdcd3-a87b-4358-aeff-05874e656335",
+    "started_at": "2026-02-28T22:26:52.929000",
+    "finished_at": "2026-02-28T22:37:42.596606",
+    "n_total_trials": 12,
+    "stats": {
+        "n_trials": 12,
+        "n_errors": 1,
+        "evals": {
+            "codex__260226_0930": {
+                "n_trials": 11,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "jj_op_log_recovery__KetGiKQ",
+                            "jj_squash_history_cleanup__6c84m6x",
+                            "jj_rewrite_history_split_squash__5y75ThJ",
+                            "jj_revsets_prune__WA8Vcbp",
+                            "jj_revset_prune_task__gsxQZHL",
+                            "jj_config_alias_setup__e7AAD9B",
+                            "jj_rebase_conflict__YdbBEMo",
+                            "jj_bookmark_management__rXLcJHx",
+                            "jj_history_rewrite__WTjGy8H",
+                            "jj_restore_single_file__4nxcKTv",
+                            "jj_rebase_conflict_resolution__eWx72fA"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "RuntimeError": [
+                        "jj_history_cleanup_split_squash__t6ykoag"
+                    ]
+                }
+            }
+        }
+    }
+}

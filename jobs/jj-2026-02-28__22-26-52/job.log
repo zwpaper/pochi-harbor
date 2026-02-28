@@ -1,0 +1,2 @@
+Trial jj_history_cleanup_split_squash__t6ykoag failed: Agent setup failed with exit code 2. See logs in jobs/2026-02-28__22-26-52/jj_history_cleanup_split_squash__t6ykoag/agent/setup
+Not retrying trial because the maximum number of retries has been reached
