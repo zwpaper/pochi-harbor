@@ -1,0 +1,31 @@
+Hit:1 http://deb.debian.org/debian trixie InRelease
+Hit:2 http://deb.debian.org/debian trixie-updates InRelease
+Hit:3 http://deb.debian.org/debian-security trixie-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.14.1-2+deb13u2).
+0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.
+downloading uv 0.9.5 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading pygments (1.2MiB)
+Downloading numpy (15.8MiB)
+Downloading pandas (11.7MiB)
+Downloading pyarrow (45.5MiB)
+ Downloading pygments
+  × Failed to download `pandas==2.3.3`
+  ├─▶ Failed to extract archive:
+  │   pandas-2.3.3-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+  ├─▶ I/O operation failed during extraction
+  ╰─▶ Failed to download distribution due to network timeout. Try increasing
+      UV_HTTP_TIMEOUT (current value: 30s).

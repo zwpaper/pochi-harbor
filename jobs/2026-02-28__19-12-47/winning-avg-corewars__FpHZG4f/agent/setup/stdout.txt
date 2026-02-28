@@ -1,0 +1,48 @@
+Get:1 http://deb.debian.org/debian stable InRelease [140 kB]
+Get:2 http://deb.debian.org/debian trixie InRelease [140 kB]
+Get:3 http://deb.debian.org/debian trixie-updates InRelease [47.3 kB]
+Get:4 http://deb.debian.org/debian-security trixie-security InRelease [43.4 kB]
+Get:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages.diff/Index [2713 B]
+Err:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages.diff/Index
+  Need 5956 compressed bytes, but limit is 5412 and original is 5412
+Get:6 http://deb.debian.org/debian stable/main Sources [10.5 MB]
+Get:7 http://deb.debian.org/debian trixie/main amd64 Packages [9670 kB]
+Get:7 http://deb.debian.org/debian trixie/main amd64 Packages [9670 kB]
+Ign:5 http://deb.debian.org/debian trixie-updates/main amd64 Packages.diff/Index
+Get:8 http://deb.debian.org/debian-security trixie-security/main amd64 Packages [113 kB]
+Get:9 http://deb.debian.org/debian trixie-updates/main amd64 Packages [5412 B]
+Fetched 20.7 MB in 9s (2263 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl3t64-gnutls libcurl4t64
+The following packages will be upgraded:
+  curl libcurl3t64-gnutls libcurl4t64
+3 upgraded, 0 newly installed, 0 to remove and 37 not upgraded.
+Need to get 1044 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main amd64 curl amd64 8.14.1-2+deb13u2 [270 kB]
+Get:2 http://deb.debian.org/debian trixie/main amd64 libcurl4t64 amd64 8.14.1-2+deb13u2 [391 kB]
+Get:3 http://deb.debian.org/debian trixie/main amd64 libcurl3t64-gnutls amd64 8.14.1-2+deb13u2 [383 kB]
+Fetched 1044 kB in 2s (555 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 33177 files and directories currently installed.)
+Preparing to unpack .../curl_8.14.1-2+deb13u2_amd64.deb ...
+Unpacking curl (8.14.1-2+deb13u2) over (8.14.1-2) ...
+Preparing to unpack .../libcurl4t64_8.14.1-2+deb13u2_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.14.1-2+deb13u2) over (8.14.1-2) ...
+Preparing to unpack .../libcurl3t64-gnutls_8.14.1-2+deb13u2_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.14.1-2+deb13u2) over (8.14.1-2) ...
+Setting up libcurl4t64:amd64 (8.14.1-2+deb13u2) ...
+Setting up libcurl3t64-gnutls:amd64 (8.14.1-2+deb13u2) ...
+Setting up curl (8.14.1-2+deb13u2) ...
+Processing triggers for man-db (2.13.1-1) ...
+Processing triggers for libc-bin (2.41-12) ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 16631  100 16631    0     0  20048      0 --:--:-- --:--:-- --:--:-- 20037
+=> Downloading nvm from git to '/root/.nvm'
+=> Cloning into '/root/.nvm'...
+fatal: unable to access 'https://github.com/nvm-sh/nvm.git/': Failed to connect to github.com port 443 after 133805 ms: Could not connect to server
+Failed to clone nvm repo. Please report this!

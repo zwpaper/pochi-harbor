@@ -1,0 +1,22 @@
+Trial chess-best-move__Lv7yHHt failed: Docker compose command failed for environment chess-best-move. Command: docker compose -p chess-best-move__lv7yhht --project-directory /home/kw/.cache/harbor/tasks/7bFmFkDrFkAzWEnmNWFgw9/chess-best-move/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/chess-best-move:20251031 Pulling 
+ 79e41a00ade0 Pulling fs layer 
+ 64370410d5ca Pulling fs layer 
+ 9fcf91c5d8f3 Pulling fs layer 
+ c38c7b25e3de Pulling fs layer 
+ 6ada36832d15 Pulling fs layer 
+ d8f12b6818bd Pulling fs layer 
+ b2cc7717b0b6 Pulling fs layer 
+ 84d2affda6c8 Pulling fs layer 
+ a77d67507195 Pulling fs layer 
+ 58eb935af274 Pulling fs layer 
+ 64370410d5ca Downloading [=>                                                 ]  1.049MB/38.81MB
+ 64370410d5ca Downloading [==>                                                ]  2.097MB/38.81MB
+ 64370410d5ca Downloading [=====>                                             ]  4.194MB/38.81MB
+ 64370410d5ca Downloading [=========>                                         ]   7.34MB/38.81MB
+ 64370410d5ca Downloading [============>                                      ]  9.437MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/chess-best-move/blobs/sha256:9fcf91c5d8f30c93c240fbd6459127a40082f221d09e1e999285d6a97a924d7c": EOF
+. Stderr: None. 

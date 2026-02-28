@@ -1,0 +1,9 @@
+Trial fix-ocaml-gc__tLpT3TY failed: Docker compose command failed for environment fix-ocaml-gc. Command: docker compose -p fix-ocaml-gc__tlpt3ty --project-directory /home/kw/.cache/harbor/tasks/dXxv47w6VWWtstSMMiefPe/fix-ocaml-gc/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/fix-ocaml-gc:20251031 Pulling 
+ 9dc0a3a34bff Pulling fs layer 
+ 7a95f9abdbff Pulling fs layer 
+ 5502f4618d3b Pulling fs layer 
+ 5502f4618d3b Downloading [>                                                  ]  1.049MB/528.3MB
+ 5502f4618d3b Downloading [>                                                  ]  2.097MB/528.3MB
+ 5502f4618d3b Downloading [>                                                  ]  2.097MB/528.3MB
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/9d/9dc0a3a34bff39bbf862d8936950eb5842fc267e39efc9aa8ea4447d76a1dee1/data?expires=1772286086&signature=x%2Bv5wiAnV%2F49UDcMBV8a4s0vAt4%3D&version=3": EOF
+. Stderr: None. 

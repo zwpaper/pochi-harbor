@@ -1,0 +1,996 @@
+Exception AgentTimeoutError is in exclude_exceptions, not retrying
+Not retrying trial because the exception is not in include_exceptions or the maximum number of retries has been reached
+Trial winning-avg-corewars__FpHZG4f failed: Agent setup failed with exit code 2. See logs in jobs/2026-02-28__19-12-47/winning-avg-corewars__FpHZG4f/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial pytorch-model-cli__V7m9VHC failed: Agent setup failed with exit code 28. See logs in jobs/2026-02-28__19-12-47/pytorch-model-cli__V7m9VHC/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial password-recovery__vmMuw8Z failed: Agent setup failed with exit code 28. See logs in jobs/2026-02-28__19-12-47/password-recovery__vmMuw8Z/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial torch-tensor-parallelism__CGu2RQt failed: Docker compose command failed for environment torch-tensor-parallelism. Command: docker compose -p torch-tensor-parallelism__cgu2rqt --project-directory /home/kw/.cache/harbor/tasks/8njYn5Af8tPLKjM5cFeNvR/torch-tensor-parallelism/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/torch-tensor-parallelism:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/torch-tensor-parallelism/manifests/sha256:c50ac169e11465f41b49749fe87e4487f24d31a0c39c0906cd3242cc5499c690": dial tcp 198.18.1.175:443: i/o timeout
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial mteb-retrieve__9WBnUjq failed: Docker compose command failed for environment mteb-retrieve. Command: docker compose -p mteb-retrieve__9wbnujq --project-directory /home/kw/.cache/harbor/tasks/J63TLMqMZcCeiRe8KAiy5T/mteb-retrieve/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/mteb-retrieve:20251031 Pulling 
+ 7bb3f3185069 Pulling fs layer 
+ eb09864e43e6 Pulling fs layer 
+ 7c5b4bbef033 Pulling fs layer 
+ cc20e1fa4454 Pulling fs layer 
+ 1095d7775278 Pulling fs layer 
+ 420d334c0bc9 Pulling fs layer 
+ abe1fea37542 Pulling fs layer 
+ 13e30b69e389 Pulling fs layer 
+ 15d8343a97c7 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/mteb-retrieve/blobs/sha256:420d334c0bc9bf93af4d089f079c20c055ba92277d9b44b7b2e0594652e67711": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Exception AgentTimeoutError is in exclude_exceptions, not retrying
+Not retrying trial because the exception is not in include_exceptions or the maximum number of retries has been reached
+Trial configure-git-webserver__uPRD7FB failed: Agent setup failed with exit code 35. See logs in jobs/2026-02-28__19-12-47/configure-git-webserver__uPRD7FB/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial crack-7z-hash__2iuNqud failed: Docker compose command failed for environment crack-7z-hash. Command: docker compose -p crack-7z-hash__2iunqud --project-directory /home/kw/.cache/harbor/tasks/MAyhSNHCZegJvZuPyTitjJ/crack-7z-hash/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/crack-7z-hash:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/cd/cd0a22dc1d928e3075936ac702626ae529a683ac25aed25103ffaf33b72074d5/data?expires=1772283935&signature=Dcga%2B8F%2BfufR%2FN49iCo4Ezz4%2FQY%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial chess-best-move__Lv7yHHt failed: Docker compose command failed for environment chess-best-move. Command: docker compose -p chess-best-move__lv7yhht --project-directory /home/kw/.cache/harbor/tasks/7bFmFkDrFkAzWEnmNWFgw9/chess-best-move/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/chess-best-move:20251031 Pulling 
+ 79e41a00ade0 Pulling fs layer 
+ 64370410d5ca Pulling fs layer 
+ 9fcf91c5d8f3 Pulling fs layer 
+ c38c7b25e3de Pulling fs layer 
+ 6ada36832d15 Pulling fs layer 
+ d8f12b6818bd Pulling fs layer 
+ b2cc7717b0b6 Pulling fs layer 
+ 84d2affda6c8 Pulling fs layer 
+ a77d67507195 Pulling fs layer 
+ 58eb935af274 Pulling fs layer 
+ 64370410d5ca Downloading [=>                                                 ]  1.049MB/38.81MB
+ 64370410d5ca Downloading [==>                                                ]  2.097MB/38.81MB
+ 64370410d5ca Downloading [=====>                                             ]  4.194MB/38.81MB
+ 64370410d5ca Downloading [=========>                                         ]   7.34MB/38.81MB
+ 64370410d5ca Downloading [============>                                      ]  9.437MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+ 64370410d5ca Downloading [=============>                                     ]  10.49MB/38.81MB
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/chess-best-move/blobs/sha256:9fcf91c5d8f30c93c240fbd6459127a40082f221d09e1e999285d6a97a924d7c": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial cobol-modernization__pvhGftS failed: Docker compose command failed for environment cobol-modernization. Command: docker compose -p cobol-modernization__pvhgfts --project-directory /home/kw/.cache/harbor/tasks/SmKKTsxNnHaHqhzng8SrD2/cobol-modernization/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/cobol-modernization:20251031 Pulling 
+ 7e88bf276da0 Pulling fs layer 
+ bb31e0971ff4 Pulling fs layer 
+ b1badc6e5066 Pulling fs layer 
+ d55dfff74d98 Pulling fs layer 
+ e97853488aa5 Pulling fs layer 
+ 63ff33ad641b Pulling fs layer 
+ a5aa2831c132 Pulling fs layer 
+ ff9dbe1ab819 Pulling fs layer 
+ 17c435b06bac Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/cobol-modernization/blobs/sha256:b1badc6e50664185acfaa0ca255d8076061c2a9d881cecaaad281ae11af000ce": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial hf-model-inference__DuxNdJZ failed: Docker compose command failed for environment hf-model-inference. Command: docker compose -p hf-model-inference__duxndjz --project-directory /home/kw/.cache/harbor/tasks/DcF3L5bfEpwdBkhfr3hgHe/hf-model-inference/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/hf-model-inference:20251031 Pulling 
+ Image alexgshaw/hf-model-inference:20251031 Error failed to resolve reference "docker.io/alexgshaw/hf-model-inference:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/hf-model-inference/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/hf-model-inference:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/hf-model-inference/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial compile-compcert__D4uZBKf failed: Docker compose command failed for environment compile-compcert. Command: docker compose -p compile-compcert__d4uzbkf --project-directory /home/kw/.cache/harbor/tasks/QDMuuRtnbx7cWNzKkXsGhM/compile-compcert/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/compile-compcert:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/4d/4dcb35e934b5f4ef743e9955ee453bfbf33be25d232fa3a247bb50fbd5837564/data?expires=1772284321&signature=QhSL7BvyGgbI9NtDt70AZdrywvg%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial db-wal-recovery__EaECs53 failed: Docker compose command failed for environment db-wal-recovery. Command: docker compose -p db-wal-recovery__eaecs53 --project-directory /home/kw/.cache/harbor/tasks/X4QTPPGhjzjJSVbTTETRUK/db-wal-recovery/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/db-wal-recovery:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/db-wal-recovery/manifests/sha256:0e33ea5ec823975d1bd6c3778395c9f94251dd88f571146057bff6adb7e4594e": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial headless-terminal__f9Z7pBP failed: Docker compose command failed for environment headless-terminal. Command: docker compose -p headless-terminal__f9z7pbp --project-directory /home/kw/.cache/harbor/tasks/KSwQXLapvDLmcHTvZcJVQG/headless-terminal/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/headless-terminal:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/headless-terminal/manifests/sha256:eb7e209672bf6cef2785fafd9e13509b10626c327bcc2b37f5bf40ca83eaf3aa": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial fix-git__khai5h5 failed: Docker compose command failed for environment fix-git. Command: docker compose -p fix-git__khai5h5 --project-directory /home/kw/.cache/harbor/tasks/kzqjKVWxvHZxV5xyLNLqJi/fix-git/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/fix-git:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/fix-git/manifests/sha256:61e431c00c58df652287aadce5457634d9f9330cfdd153ebdf2802df0d540119": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial schemelike-metacircular-eval__7is5n6x failed: Docker compose command failed for environment schemelike-metacircular-eval. Command: docker compose -p schemelike-metacircular-eval__7is5n6x --project-directory /home/kw/.cache/harbor/tasks/YkDjArg6hKdFYEmdiPrztY/schemelike-metacircular-eval/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/schemelike-metacircular-eval:20251031 Pulling 
+ a4cd59c2a534 Pulling fs layer 
+ d55dfff74d98 Pulling fs layer 
+ b1badc6e5066 Pulling fs layer 
+ 7e88bf276da0 Pulling fs layer 
+ 63ff33ad641b Pulling fs layer 
+ e97853488aa5 Pulling fs layer 
+ bec7c2f1120b Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/d5/d55dfff74d98ac204fa78f18533eecc39a8bd69bd9384a73572c6d09f06b11fc/data?expires=1772284334&signature=Ve3sGiIL4YqBldPmY7BtwrB9S%2FE%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial qemu-startup__PyyVfu3 failed: Docker compose command failed for environment qemu-startup. Command: docker compose -p qemu-startup__pyyvfu3 --project-directory /home/kw/.cache/harbor/tasks/gHS2mTGhPaYTuJWpCkw4J9/qemu-startup/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/qemu-startup:20251031 Pulling 
+ a0c6b4cb481d Pulling fs layer 
+ 851bb1368529 Pulling fs layer 
+ 3d84f27ee395 Pulling fs layer 
+ 90b04f7874fd Pulling fs layer 
+ a74b6126a333 Pulling fs layer 
+ d207cc66da44 Pulling fs layer 
+ fe2b0116b821 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/qemu-startup/blobs/sha256:3d84f27ee395d98d8ca14617b744516d447ce103b851c39a1478669fcb387097": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial build-pov-ray__T7KJBff failed: Docker compose command failed for environment build-pov-ray. Command: docker compose -p build-pov-ray__t7kjbff --project-directory /home/kw/.cache/harbor/tasks/H9EGgCK3p6caXKKnhsqu6a/build-pov-ray/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/build-pov-ray:20251031 Pulling 
+ 4f4fb700ef54 Pulling fs layer 
+ e4dfad2790bf Pulling fs layer 
+ b554f12c25e5 Pulling fs layer 
+ 38fb19e2afbe Pulling fs layer 
+ 4f4fb700ef54 Download complete 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/build-pov-ray/blobs/sha256:b554f12c25e541cbcd8a92c9b85bf75360687434756d63742c9035be3f51759c": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial git-multibranch__7EY78LC failed: Docker compose command failed for environment git-multibranch. Command: docker compose -p git-multibranch__7ey78lc --project-directory /home/kw/.cache/harbor/tasks/kLfrAkLDVW7LCezLUHt4oB/git-multibranch/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/git-multibranch:20251031 Pulling 
+ Image alexgshaw/git-multibranch:20251031 Error failed to resolve reference "docker.io/alexgshaw/git-multibranch:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/git-multibranch/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/git-multibranch:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/git-multibranch/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial polyglot-rust-c__BPyVNy3 failed: Agent setup failed with exit code 1. See logs in jobs/2026-02-28__19-12-47/polyglot-rust-c__BPyVNy3/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial kv-store-grpc__ywuz8sw failed: Docker compose command failed for environment kv-store-grpc. Command: docker compose -p kv-store-grpc__ywuz8sw --project-directory /home/kw/.cache/harbor/tasks/JGX6wXigbfSgX6m298mcKW/kv-store-grpc/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/kv-store-grpc:20251031 Pulling 
+ Image alexgshaw/kv-store-grpc:20251031 Error failed to resolve reference "docker.io/alexgshaw/kv-store-grpc:20251031": failed to authorize: failed to fetch oauth token: Post "https://auth.docker.io/token": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/kv-store-grpc:20251031": failed to authorize: failed to fetch oauth token: Post "https://auth.docker.io/token": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial install-windows-3.11__4LsneC5 failed: Docker compose command failed for environment install-windows-3.11. Command: docker compose -p install-windows-3-11__4lsnec5 --project-directory /home/kw/.cache/harbor/tasks/7s8y623XYuDhmBG6ERABwC/install-windows-3.11/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/install-windows-3.11:20251031 Pulling 
+ d6235d7dba47 Pulling fs layer 
+ 4b3ffd8ccb52 Pulling fs layer 
+ ffaea3d7f60b Pulling fs layer 
+ ef4914b59c87 Pulling fs layer 
+ 66867fb58315 Pulling fs layer 
+ ae99a0c74233 Pulling fs layer 
+ 28079ba6684f Pulling fs layer 
+ 7e68690a2ad4 Pulling fs layer 
+ 7316b97ab250 Pulling fs layer 
+ f013f756e970 Pulling fs layer 
+ 8831fcdb4845 Pulling fs layer 
+ 7307483e371a Pulling fs layer 
+ ceaf0d042491 Pulling fs layer 
+ 72d39465f9a0 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/install-windows-3.11/blobs/sha256:ceaf0d042491f84f2c308027adc9b831f3a58ba882d455974ee7211a6eaddd3e": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial make-doom-for-mips__qSD9HcG failed: Agent setup failed with exit code 28. See logs in jobs/2026-02-28__19-12-47/make-doom-for-mips__qSD9HcG/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial torch-pipeline-parallelism__Ubm2mzV failed: Docker compose command failed for environment torch-pipeline-parallelism. Command: docker compose -p torch-pipeline-parallelism__ubm2mzv --project-directory /home/kw/.cache/harbor/tasks/K56RXLv9fW76nGzkYythKB/torch-pipeline-parallelism/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/torch-pipeline-parallelism:20251031 Pulling 
+ Image alexgshaw/torch-pipeline-parallelism:20251031 Error failed to resolve reference "docker.io/alexgshaw/torch-pipeline-parallelism:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/torch-pipeline-parallelism/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/torch-pipeline-parallelism:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/torch-pipeline-parallelism/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial tune-mjcf__r87bacM failed: Docker compose command failed for environment tune-mjcf. Command: docker compose -p tune-mjcf__r87bacm --project-directory /home/kw/.cache/harbor/tasks/jWu5FXBKfqdBD9LqMa9a2N/tune-mjcf/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/tune-mjcf:20251031 Pulling 
+ Image alexgshaw/tune-mjcf:20251031 Error failed to resolve reference "docker.io/alexgshaw/tune-mjcf:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/tune-mjcf/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/tune-mjcf:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/tune-mjcf/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial extract-moves-from-video__WHKLEoz failed: Docker compose command failed for environment extract-moves-from-video. Command: docker compose -p extract-moves-from-video__whkleoz --project-directory /home/kw/.cache/harbor/tasks/bDZ3NNHZSFq2MH6CzCTykb/extract-moves-from-video/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/extract-moves-from-video:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/extract-moves-from-video/manifests/sha256:14a9dcca7d08ce53c5a0ed9fbd663a996ef28f207c199ed69d9ccf6064f8b184": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial gcode-to-text__tHwANWW failed: Docker compose command failed for environment gcode-to-text. Command: docker compose -p gcode-to-text__thwanww --project-directory /home/kw/.cache/harbor/tasks/JK5CeLoen6gxrbEkrjQ94D/gcode-to-text/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/gcode-to-text:20251031 Pulling 
+ 333f8ac46b6e Pulling fs layer 
+ e37c25268cfe Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/gcode-to-text/blobs/sha256:e37c25268cfe950a7d8c710ecc34168e88bf94ea17466c397540feeba6e70b06": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial make-mips-interpreter__ZW2hBVF failed: Docker compose command failed for environment make-mips-interpreter. Command: docker compose -p make-mips-interpreter__zw2hbvf --project-directory /home/kw/.cache/harbor/tasks/LeNjAXy6fbV5X852Td8iV9/make-mips-interpreter/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/make-mips-interpreter:20251031 Pulling 
+ 681c6e839459 Pulling fs layer 
+ 3976a9caed20 Pulling fs layer 
+ f30729b4a71b Pulling fs layer 
+ c746c2b5d97c Pulling fs layer 
+ d252566affb2 Pulling fs layer 
+ ac66e6ab6701 Pulling fs layer 
+ 7676a6ce786d Pulling fs layer 
+ f30729b4a71b Download complete 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/ac/ac66e6ab6701baaa715310827e72549cfe3ba33bb572a10273366a441c50e844/data?expires=1772284802&signature=TC4U%2BKmwV2rLM0S4mIjQH3sPdp4%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial mteb-leaderboard__MzJJ3Bk failed: Docker compose command failed for environment mteb-leaderboard. Command: docker compose -p mteb-leaderboard__mzjj3bk --project-directory /home/kw/.cache/harbor/tasks/3aN2GgseP4MfXC7ixV7cXB/mteb-leaderboard/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/mteb-leaderboard:20251031 Pulling 
+ 9b150a6e8f7b Pulling fs layer 
+ 7c5b4bbef033 Pulling fs layer 
+ abe1fea37542 Pulling fs layer 
+ 15d8343a97c7 Pulling fs layer 
+ 613d8ce7c99d Pulling fs layer 
+ 13e30b69e389 Pulling fs layer 
+ 00c2dac0e389 Pulling fs layer 
+ 00c2dac0e389 Download complete 
+ 13e30b69e389 Download complete 
+ 9b150a6e8f7b Downloading [>                                                  ]  1.049MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  3.146MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  6.291MB/8.628GB
+ abe1fea37542 Downloading [=>                                                 ]  1.049MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  8.389MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  11.53MB/8.628GB
+ abe1fea37542 Downloading [=>                                                 ]  1.049MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  14.68MB/8.628GB
+ abe1fea37542 Downloading [=>                                                 ]  1.049MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  17.83MB/8.628GB
+ abe1fea37542 Downloading [===>                                               ]  2.097MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  20.97MB/8.628GB
+ abe1fea37542 Downloading [===>                                               ]  2.097MB/28.23MB
+ abe1fea37542 Downloading [=====>                                             ]  3.146MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  23.07MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  25.17MB/8.628GB
+ abe1fea37542 Downloading [=====>                                             ]  3.146MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  27.26MB/8.628GB
+ abe1fea37542 Downloading [=======>                                           ]  4.194MB/28.23MB
+ abe1fea37542 Downloading [=======>                                           ]  4.194MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  29.36MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  31.46MB/8.628GB
+ abe1fea37542 Downloading [=========>                                         ]  5.243MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  33.55MB/8.628GB
+ 7c5b4bbef033 Downloading [===>                                               ]  1.049MB/15.37MB
+ abe1fea37542 Downloading [===========>                                       ]  6.291MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  35.65MB/8.628GB
+ 7c5b4bbef033 Downloading [===>                                               ]  1.049MB/15.37MB
+ abe1fea37542 Downloading [=============>                                     ]   7.34MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  37.75MB/8.628GB
+ 7c5b4bbef033 Downloading [===>                                               ]  1.049MB/15.37MB
+ abe1fea37542 Downloading [=============>                                     ]   7.34MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]   38.8MB/8.628GB
+ 7c5b4bbef033 Downloading [======>                                            ]  2.097MB/15.37MB
+ abe1fea37542 Downloading [==============>                                    ]  8.389MB/28.23MB
+ 15d8343a97c7 Downloading [==============>                                    ]  1.049MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  39.85MB/8.628GB
+ 7c5b4bbef033 Downloading [======>                                            ]  2.097MB/15.37MB
+ abe1fea37542 Downloading [==============>                                    ]  8.389MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  41.94MB/8.628GB
+ 7c5b4bbef033 Downloading [======>                                            ]  2.097MB/15.37MB
+ abe1fea37542 Downloading [================>                                  ]  9.437MB/28.23MB
+ 15d8343a97c7 Downloading [==============>                                    ]  1.049MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  42.99MB/8.628GB
+ 7c5b4bbef033 Downloading [==========>                                        ]  3.146MB/15.37MB
+ abe1fea37542 Downloading [================>                                  ]  9.437MB/28.23MB
+ 15d8343a97c7 Downloading [==============>                                    ]  1.049MB/3.516MB
+ 7c5b4bbef033 Downloading [==========>                                        ]  3.146MB/15.37MB
+ abe1fea37542 Downloading [==================>                                ]  10.49MB/28.23MB
+ 15d8343a97c7 Downloading [==============>                                    ]  1.049MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  44.04MB/8.628GB
+ abe1fea37542 Downloading [==================>                                ]  10.49MB/28.23MB
+ 15d8343a97c7 Downloading [==============>                                    ]  1.049MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  45.09MB/8.628GB
+ 7c5b4bbef033 Downloading [==========>                                        ]  3.146MB/15.37MB
+ 9b150a6e8f7b Downloading [>                                                  ]  46.14MB/8.628GB
+ 7c5b4bbef033 Downloading [=============>                                     ]  4.194MB/15.37MB
+ abe1fea37542 Downloading [====================>                              ]  11.53MB/28.23MB
+ 15d8343a97c7 Downloading [=============================>                     ]  2.097MB/3.516MB
+ abe1fea37542 Downloading [======================>                            ]  12.58MB/28.23MB
+ 613d8ce7c99d Downloading [>                                                  ]  1.049MB/145MB
+ 15d8343a97c7 Downloading [=============================>                     ]  2.097MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  48.23MB/8.628GB
+ 7c5b4bbef033 Downloading [=============>                                     ]  4.194MB/15.37MB
+ 613d8ce7c99d Downloading [>                                                  ]  1.049MB/145MB
+ 15d8343a97c7 Downloading [=============================>                     ]  2.097MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  49.28MB/8.628GB
+ 7c5b4bbef033 Downloading [=================>                                 ]  5.243MB/15.37MB
+ abe1fea37542 Downloading [======================>                            ]  12.58MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  50.33MB/8.628GB
+ 7c5b4bbef033 Downloading [=================>                                 ]  5.243MB/15.37MB
+ abe1fea37542 Downloading [========================>                          ]  13.63MB/28.23MB
+ 613d8ce7c99d Downloading [>                                                  ]  1.049MB/145MB
+ 15d8343a97c7 Downloading [=============================>                     ]  2.097MB/3.516MB
+ 613d8ce7c99d Downloading [>                                                  ]  1.049MB/145MB
+ 15d8343a97c7 Downloading [=============================>                     ]  2.097MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  51.38MB/8.628GB
+ 7c5b4bbef033 Downloading [=================>                                 ]  5.243MB/15.37MB
+ abe1fea37542 Downloading [========================>                          ]  13.63MB/28.23MB
+ 15d8343a97c7 Downloading [=============================>                     ]  2.097MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  52.43MB/8.628GB
+ 7c5b4bbef033 Downloading [====================>                              ]  6.291MB/15.37MB
+ abe1fea37542 Downloading [==========================>                        ]  14.68MB/28.23MB
+ 613d8ce7c99d Downloading [>                                                  ]  1.049MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  53.48MB/8.628GB
+ 7c5b4bbef033 Downloading [====================>                              ]  6.291MB/15.37MB
+ abe1fea37542 Downloading [==========================>                        ]  14.68MB/28.23MB
+ 613d8ce7c99d Downloading [>                                                  ]  2.097MB/145MB
+ 15d8343a97c7 Downloading [============================================>      ]  3.146MB/3.516MB
+ 613d8ce7c99d Downloading [>                                                  ]  2.097MB/145MB
+ 15d8343a97c7 Downloading [============================================>      ]  3.146MB/3.516MB
+ 9b150a6e8f7b Downloading [>                                                  ]  54.53MB/8.628GB
+ 7c5b4bbef033 Downloading [====================>                              ]  6.291MB/15.37MB
+ abe1fea37542 Downloading [===========================>                       ]  15.73MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]  56.62MB/8.628GB
+ 7c5b4bbef033 Downloading [=======================>                           ]   7.34MB/15.37MB
+ abe1fea37542 Downloading [===========================>                       ]  15.73MB/28.23MB
+ 613d8ce7c99d Downloading [>                                                  ]  2.097MB/145MB
+ 15d8343a97c7 Download complete 
+ 9b150a6e8f7b Downloading [>                                                  ]  57.67MB/8.628GB
+ 7c5b4bbef033 Downloading [=======================>                           ]   7.34MB/15.37MB
+ abe1fea37542 Downloading [=============================>                     ]  16.78MB/28.23MB
+ 613d8ce7c99d Downloading [>                                                  ]  2.097MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  59.77MB/8.628GB
+ 7c5b4bbef033 Downloading [===========================>                       ]  8.389MB/15.37MB
+ abe1fea37542 Downloading [===============================>                   ]  17.83MB/28.23MB
+ 613d8ce7c99d Downloading [>                                                  ]  2.097MB/145MB
+ 7c5b4bbef033 Downloading [===========================>                       ]  8.389MB/15.37MB
+ abe1fea37542 Downloading [===============================>                   ]  17.83MB/28.23MB
+ 613d8ce7c99d Downloading [=>                                                 ]  3.146MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  60.82MB/8.628GB
+ 7c5b4bbef033 Downloading [===========================>                       ]  8.389MB/15.37MB
+ abe1fea37542 Downloading [=================================>                 ]  18.87MB/28.23MB
+ 613d8ce7c99d Downloading [=>                                                 ]  3.146MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  61.87MB/8.628GB
+ 7c5b4bbef033 Downloading [==============================>                    ]  9.437MB/15.37MB
+ abe1fea37542 Downloading [=================================>                 ]  18.87MB/28.23MB
+ 613d8ce7c99d Downloading [=>                                                 ]  3.146MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  63.73MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  65.01MB/8.628GB
+ 7c5b4bbef033 Downloading [==============================>                    ]  9.437MB/15.37MB
+ abe1fea37542 Downloading [===================================>               ]  19.92MB/28.23MB
+ 613d8ce7c99d Downloading [=>                                                 ]  4.194MB/145MB
+ abe1fea37542 Downloading [===================================>               ]  19.92MB/28.23MB
+ 613d8ce7c99d Downloading [=>                                                 ]  4.194MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  66.06MB/8.628GB
+ 7c5b4bbef033 Downloading [==================================>                ]  10.49MB/15.37MB
+ 613d8ce7c99d Downloading [=>                                                 ]  4.194MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  68.16MB/8.628GB
+ 7c5b4bbef033 Downloading [==================================>                ]  10.49MB/15.37MB
+ abe1fea37542 Downloading [=====================================>             ]  20.97MB/28.23MB
+ 7c5b4bbef033 Downloading [==================================>                ]  10.49MB/15.37MB
+ abe1fea37542 Downloading [=======================================>           ]  22.02MB/28.23MB
+ 613d8ce7c99d Downloading [=>                                                 ]  5.243MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  69.21MB/8.628GB
+ 613d8ce7c99d Downloading [=>                                                 ]  5.243MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  70.25MB/8.628GB
+ 7c5b4bbef033 Downloading [=====================================>             ]  11.53MB/15.37MB
+ abe1fea37542 Downloading [=======================================>           ]  22.02MB/28.23MB
+ 613d8ce7c99d Downloading [=>                                                 ]  5.243MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  72.35MB/8.628GB
+ 7c5b4bbef033 Downloading [=====================================>             ]  11.53MB/15.37MB
+ abe1fea37542 Downloading [========================================>          ]  23.07MB/28.23MB
+ 9b150a6e8f7b Downloading [>                                                  ]   73.4MB/8.628GB
+ 7c5b4bbef033 Downloading [========================================>          ]  12.58MB/15.37MB
+ abe1fea37542 Downloading [========================================>          ]  23.07MB/28.23MB
+ 613d8ce7c99d Downloading [==>                                                ]  6.291MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  74.45MB/8.628GB
+ 7c5b4bbef033 Downloading [========================================>          ]  12.58MB/15.37MB
+ abe1fea37542 Downloading [==========================================>        ]  24.12MB/28.23MB
+ 613d8ce7c99d Downloading [==>                                                ]  6.291MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  76.55MB/8.628GB
+ 7c5b4bbef033 Downloading [============================================>      ]  13.63MB/15.37MB
+ abe1fea37542 Downloading [============================================>      ]  25.17MB/28.23MB
+ 613d8ce7c99d Downloading [==>                                                ]   7.34MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  77.59MB/8.628GB
+ 7c5b4bbef033 Downloading [===============================================>   ]  14.68MB/15.37MB
+ abe1fea37542 Downloading [==============================================>    ]  26.21MB/28.23MB
+ 613d8ce7c99d Downloading [==>                                                ]   7.34MB/145MB
+ 613d8ce7c99d Downloading [==>                                                ]  8.389MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  78.64MB/8.628GB
+ 7c5b4bbef033 Downloading [==================================================>]  15.37MB/15.37MB
+ abe1fea37542 Downloading [================================================>  ]  27.26MB/28.23MB
+ abe1fea37542 Downloading [==================================================>]  28.23MB/28.23MB
+ 613d8ce7c99d Downloading [===>                                               ]  9.437MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  79.69MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  81.79MB/8.628GB
+ 7c5b4bbef033 Download complete 
+ 613d8ce7c99d Downloading [===>                                               ]  10.49MB/145MB
+ abe1fea37542 Download complete 
+ 613d8ce7c99d Downloading [===>                                               ]  10.49MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  82.84MB/8.628GB
+ abe1fea37542 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  82.84MB/8.628GB
+ 613d8ce7c99d Downloading [===>                                               ]  10.49MB/145MB
+ abe1fea37542 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  85.98MB/8.628GB
+ 613d8ce7c99d Downloading [===>                                               ]  10.49MB/145MB
+ abe1fea37542 Extracting 1 s
+ 613d8ce7c99d Downloading [===>                                               ]  10.49MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  87.03MB/8.628GB
+ abe1fea37542 Extracting 1 s
+ 613d8ce7c99d Downloading [===>                                               ]  11.53MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  88.08MB/8.628GB
+ abe1fea37542 Extracting 1 s
+ 613d8ce7c99d Downloading [====>                                              ]  12.58MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  89.13MB/8.628GB
+ abe1fea37542 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  91.23MB/8.628GB
+ 613d8ce7c99d Downloading [====>                                              ]  12.58MB/145MB
+ abe1fea37542 Extracting 1 s
+ 613d8ce7c99d Downloading [====>                                              ]  13.63MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  92.27MB/8.628GB
+ abe1fea37542 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  93.32MB/8.628GB
+ 613d8ce7c99d Downloading [====>                                              ]  13.63MB/145MB
+ abe1fea37542 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  94.37MB/8.628GB
+ 613d8ce7c99d Downloading [====>                                              ]  13.63MB/145MB
+ abe1fea37542 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  96.47MB/8.628GB
+ 613d8ce7c99d Downloading [=====>                                             ]  14.68MB/145MB
+ abe1fea37542 Extracting 2 s
+ 9b150a6e8f7b Downloading [>                                                  ]  97.52MB/8.628GB
+ 613d8ce7c99d Downloading [=====>                                             ]  14.68MB/145MB
+ abe1fea37542 Extracting 2 s
+ 613d8ce7c99d Downloading [=====>                                             ]  15.73MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  98.57MB/8.628GB
+ abe1fea37542 Extracting 2 s
+ 9b150a6e8f7b Downloading [>                                                  ]  99.61MB/8.628GB
+ 613d8ce7c99d Downloading [=====>                                             ]  15.73MB/145MB
+ 15d8343a97c7 Extracting 1 s
+ abe1fea37542 Pull complete 
+ 9b150a6e8f7b Downloading [>                                                  ]  101.7MB/8.628GB
+ 613d8ce7c99d Downloading [=====>                                             ]  15.73MB/145MB
+ 15d8343a97c7 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  102.8MB/8.628GB
+ 613d8ce7c99d Downloading [=====>                                             ]  16.78MB/145MB
+ 15d8343a97c7 Pull complete 
+ 7c5b4bbef033 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  103.8MB/8.628GB
+ 613d8ce7c99d Downloading [=====>                                             ]  16.78MB/145MB
+ 7c5b4bbef033 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  104.9MB/8.628GB
+ 613d8ce7c99d Downloading [======>                                            ]  17.83MB/145MB
+ 7c5b4bbef033 Extracting 1 s
+ 613d8ce7c99d Downloading [======>                                            ]  18.87MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]    107MB/8.628GB
+ 7c5b4bbef033 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]    108MB/8.628GB
+ 613d8ce7c99d Downloading [======>                                            ]  18.87MB/145MB
+ 7c5b4bbef033 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  109.1MB/8.628GB
+ 613d8ce7c99d Downloading [======>                                            ]  18.87MB/145MB
+ 7c5b4bbef033 Extracting 1 s
+ 613d8ce7c99d Downloading [======>                                            ]  19.92MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  111.1MB/8.628GB
+ 7c5b4bbef033 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  112.2MB/8.628GB
+ 613d8ce7c99d Downloading [======>                                            ]  19.92MB/145MB
+ 7c5b4bbef033 Extracting 1 s
+ 9b150a6e8f7b Downloading [>                                                  ]  113.2MB/8.628GB
+ 613d8ce7c99d Downloading [=======>                                           ]  20.97MB/145MB
+ 13e30b69e389 Pull complete 
+ 7c5b4bbef033 Pull complete 
+ 9b150a6e8f7b Downloading [>                                                  ]  114.3MB/8.628GB
+ 613d8ce7c99d Downloading [=======>                                           ]  20.97MB/145MB
+ 613d8ce7c99d Downloading [=======>                                           ]  20.97MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  115.3MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  117.4MB/8.628GB
+ 613d8ce7c99d Downloading [=======>                                           ]  22.02MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  118.5MB/8.628GB
+ 613d8ce7c99d Downloading [=======>                                           ]  23.07MB/145MB
+ 613d8ce7c99d Downloading [=======>                                           ]  23.07MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  119.5MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  121.6MB/8.628GB
+ 613d8ce7c99d Downloading [=======>                                           ]  23.07MB/145MB
+ 613d8ce7c99d Downloading [=======>                                           ]  23.07MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  122.7MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  123.7MB/8.628GB
+ 613d8ce7c99d Downloading [========>                                          ]  24.12MB/145MB
+ 613d8ce7c99d Downloading [========>                                          ]  25.17MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  124.8MB/8.628GB
+ 613d8ce7c99d Downloading [========>                                          ]  25.17MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]    126MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  127.9MB/8.628GB
+ 613d8ce7c99d Downloading [=========>                                         ]  26.21MB/145MB
+ 613d8ce7c99d Downloading [=========>                                         ]  27.26MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]    129MB/8.628GB
+ 613d8ce7c99d Downloading [=========>                                         ]  27.26MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]    130MB/8.628GB
+ 613d8ce7c99d Downloading [=========>                                         ]  27.26MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  132.1MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  133.2MB/8.628GB
+ 613d8ce7c99d Downloading [=========>                                         ]  27.26MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  134.2MB/8.628GB
+ 613d8ce7c99d Downloading [=========>                                         ]  27.26MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  135.3MB/8.628GB
+ 613d8ce7c99d Downloading [=========>                                         ]  27.26MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  136.5MB/8.628GB
+ 613d8ce7c99d Downloading [=========>                                         ]  27.26MB/145MB
+ 613d8ce7c99d Downloading [==========>                                        ]  29.36MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  138.4MB/8.628GB
+ 613d8ce7c99d Downloading [==========>                                        ]  30.41MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  139.5MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  140.5MB/8.628GB
+ 613d8ce7c99d Downloading [==========>                                        ]  30.41MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  142.6MB/8.628GB
+ 613d8ce7c99d Downloading [==========>                                        ]  30.41MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  143.7MB/8.628GB
+ 613d8ce7c99d Downloading [==========>                                        ]  30.41MB/145MB
+ 613d8ce7c99d Downloading [==========>                                        ]  30.41MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  144.7MB/8.628GB
+ 613d8ce7c99d Downloading [==========>                                        ]  30.41MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  145.8MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  146.8MB/8.628GB
+ 613d8ce7c99d Downloading [===========>                                       ]  32.51MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  146.8MB/8.628GB
+ 613d8ce7c99d Downloading [===========>                                       ]  32.51MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  149.9MB/8.628GB
+ 613d8ce7c99d Downloading [===========>                                       ]  33.55MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]    151MB/8.628GB
+ 613d8ce7c99d Downloading [===========>                                       ]  33.55MB/145MB
+ 613d8ce7c99d Downloading [===========>                                       ]  33.55MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  153.1MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  154.1MB/8.628GB
+ 613d8ce7c99d Downloading [===========>                                       ]   34.6MB/145MB
+ 613d8ce7c99d Downloading [===========>                                       ]   34.6MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  155.2MB/8.628GB
+ 613d8ce7c99d Downloading [============>                                      ]  35.65MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  156.2MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  158.3MB/8.628GB
+ 613d8ce7c99d Downloading [============>                                      ]   36.7MB/145MB
+ 613d8ce7c99d Downloading [============>                                      ]   36.7MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  159.4MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  160.4MB/8.628GB
+ 613d8ce7c99d Downloading [============>                                      ]   36.7MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  161.5MB/8.628GB
+ 613d8ce7c99d Downloading [============>                                      ]   36.7MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  163.6MB/8.628GB
+ 613d8ce7c99d Downloading [============>                                      ]   36.7MB/145MB
+ 613d8ce7c99d Downloading [============>                                      ]   36.7MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  164.6MB/8.628GB
+ 9b150a6e8f7b Downloading [>                                                  ]  165.7MB/8.628GB
+ 613d8ce7c99d Downloading [=============>                                     ]  37.75MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  166.7MB/8.628GB
+ 613d8ce7c99d Downloading [=============>                                     ]   38.8MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  168.8MB/8.628GB
+ 613d8ce7c99d Downloading [=============>                                     ]  39.85MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  169.9MB/8.628GB
+ 613d8ce7c99d Downloading [=============>                                     ]  39.85MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]  170.9MB/8.628GB
+ 613d8ce7c99d Downloading [=============>                                     ]  39.85MB/145MB
+ 613d8ce7c99d Downloading [=============>                                     ]  39.85MB/145MB
+ 9b150a6e8f7b Downloading [>                                                  ]    172MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  174.1MB/8.628GB
+ 613d8ce7c99d Downloading [=============>                                     ]  39.85MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  175.1MB/8.628GB
+ 613d8ce7c99d Downloading [=============>                                     ]  39.85MB/145MB
+ 613d8ce7c99d Downloading [=============>                                     ]  39.85MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  176.2MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  177.2MB/8.628GB
+ 613d8ce7c99d Downloading [==============>                                    ]  40.89MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  179.3MB/8.628GB
+ 613d8ce7c99d Downloading [==============>                                    ]  42.99MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  179.3MB/8.628GB
+ 613d8ce7c99d Downloading [==============>                                    ]  42.99MB/145MB
+ 613d8ce7c99d Downloading [==============>                                    ]  42.99MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  181.4MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  182.5MB/8.628GB
+ 613d8ce7c99d Downloading [==============>                                    ]  42.99MB/145MB
+ 613d8ce7c99d Downloading [==============>                                    ]  42.99MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  184.5MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  185.6MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  44.04MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  186.6MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  44.04MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  187.7MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  44.04MB/145MB
+ 613d8ce7c99d Downloading [===============>                                   ]  44.04MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  189.8MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  44.04MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  190.8MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  44.04MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  191.9MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  45.09MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  192.9MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  45.09MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    195MB/8.628GB
+ 613d8ce7c99d Downloading [===============>                                   ]  46.14MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  196.1MB/8.628GB
+ 613d8ce7c99d Downloading [================>                                  ]  47.19MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  197.1MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  198.2MB/8.628GB
+ 613d8ce7c99d Downloading [================>                                  ]  47.19MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  200.3MB/8.628GB
+ 613d8ce7c99d Downloading [================>                                  ]  47.19MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  201.3MB/8.628GB
+ 613d8ce7c99d Downloading [================>                                  ]  47.19MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  202.4MB/8.628GB
+ 613d8ce7c99d Downloading [================>                                  ]  47.19MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  203.4MB/8.628GB
+ 613d8ce7c99d Downloading [================>                                  ]  47.19MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  205.5MB/8.628GB
+ 613d8ce7c99d Downloading [================>                                  ]  49.28MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  206.6MB/8.628GB
+ 613d8ce7c99d Downloading [=================>                                 ]  50.33MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  207.6MB/8.628GB
+ 613d8ce7c99d Downloading [=================>                                 ]  50.33MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  208.7MB/8.628GB
+ 613d8ce7c99d Downloading [=================>                                 ]  50.33MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  208.7MB/8.628GB
+ 613d8ce7c99d Downloading [=================>                                 ]  50.33MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  210.8MB/8.628GB
+ 613d8ce7c99d Downloading [=================>                                 ]  51.38MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  212.9MB/8.628GB
+ 613d8ce7c99d Downloading [==================>                                ]  52.43MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  213.9MB/8.628GB
+ 613d8ce7c99d Downloading [==================>                                ]  52.43MB/145MB
+ 613d8ce7c99d Downloading [==================>                                ]  52.43MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    216MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  217.1MB/8.628GB
+ 613d8ce7c99d Downloading [==================>                                ]  52.43MB/145MB
+ 613d8ce7c99d Downloading [==================>                                ]  52.43MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  218.1MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  219.2MB/8.628GB
+ 613d8ce7c99d Downloading [==================>                                ]  53.48MB/145MB
+ 613d8ce7c99d Downloading [==================>                                ]  54.53MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  221.2MB/8.628GB
+ 613d8ce7c99d Downloading [===================>                               ]  55.57MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  222.3MB/8.628GB
+ 613d8ce7c99d Downloading [===================>                               ]  56.62MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  223.3MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  225.2MB/8.628GB
+ 613d8ce7c99d Downloading [===================>                               ]  56.62MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  226.5MB/8.628GB
+ 613d8ce7c99d Downloading [===================>                               ]  56.62MB/145MB
+ 613d8ce7c99d Downloading [===================>                               ]  56.62MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  227.5MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  228.6MB/8.628GB
+ 613d8ce7c99d Downloading [===================>                               ]  56.62MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  229.6MB/8.628GB
+ 613d8ce7c99d Downloading [===================>                               ]  56.62MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  231.7MB/8.628GB
+ 613d8ce7c99d Downloading [===================>                               ]  57.67MB/145MB
+ 613d8ce7c99d Downloading [====================>                              ]  58.72MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  232.8MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  233.8MB/8.628GB
+ 613d8ce7c99d Downloading [====================>                              ]  58.72MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  234.9MB/8.628GB
+ 613d8ce7c99d Downloading [====================>                              ]  59.77MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    237MB/8.628GB
+ 613d8ce7c99d Downloading [====================>                              ]  59.77MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    238MB/8.628GB
+ 613d8ce7c99d Downloading [====================>                              ]  59.77MB/145MB
+ 613d8ce7c99d Downloading [====================>                              ]  60.82MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  239.1MB/8.628GB
+ 613d8ce7c99d Downloading [====================>                              ]  60.82MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  241.2MB/8.628GB
+ 613d8ce7c99d Downloading [=====================>                             ]  61.87MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  242.2MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  243.3MB/8.628GB
+ 613d8ce7c99d Downloading [=====================>                             ]  61.87MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  244.3MB/8.628GB
+ 613d8ce7c99d Downloading [=====================>                             ]  61.87MB/145MB
+ 613d8ce7c99d Downloading [=====================>                             ]  62.91MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  246.4MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  247.5MB/8.628GB
+ 613d8ce7c99d Downloading [=====================>                             ]  62.91MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  248.5MB/8.628GB
+ 613d8ce7c99d Downloading [=====================>                             ]  62.91MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  249.6MB/8.628GB
+ 613d8ce7c99d Downloading [=====================>                             ]  62.91MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  251.7MB/8.628GB
+ 613d8ce7c99d Downloading [======================>                            ]  63.96MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  252.7MB/8.628GB
+ 613d8ce7c99d Downloading [======================>                            ]  65.01MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  253.8MB/8.628GB
+ 613d8ce7c99d Downloading [======================>                            ]  65.01MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  254.8MB/8.628GB
+ 613d8ce7c99d Downloading [======================>                            ]  65.01MB/145MB
+ 613d8ce7c99d Downloading [======================>                            ]  65.01MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  256.9MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  257.9MB/8.628GB
+ 613d8ce7c99d Downloading [======================>                            ]  65.01MB/145MB
+ 613d8ce7c99d Downloading [======================>                            ]  65.01MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    259MB/8.628GB
+ 613d8ce7c99d Downloading [======================>                            ]  66.06MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    260MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  262.1MB/8.628GB
+ 613d8ce7c99d Downloading [======================>                            ]  66.06MB/145MB
+ 613d8ce7c99d Downloading [=======================>                           ]  67.11MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  263.2MB/8.628GB
+ 613d8ce7c99d Downloading [=======================>                           ]  67.11MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  264.2MB/8.628GB
+ 613d8ce7c99d Downloading [=======================>                           ]  67.11MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  265.3MB/8.628GB
+ 613d8ce7c99d Downloading [=======================>                           ]  67.11MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  266.3MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  268.4MB/8.628GB
+ 613d8ce7c99d Downloading [=======================>                           ]  67.11MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  269.5MB/8.628GB
+ 613d8ce7c99d Downloading [=======================>                           ]  68.16MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  270.5MB/8.628GB
+ 613d8ce7c99d Downloading [=======================>                           ]  68.16MB/145MB
+ 613d8ce7c99d Downloading [=======================>                           ]  69.21MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  272.6MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  273.7MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]  70.25MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  274.7MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]  70.25MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  275.8MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]  70.25MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  277.9MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]   71.3MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  278.9MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]   71.3MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    280MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]   71.3MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]    281MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]   71.3MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  283.1MB/8.628GB
+ 613d8ce7c99d Downloading [========================>                          ]   71.3MB/145MB
+ 613d8ce7c99d Downloading [========================>                          ]  72.35MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  284.2MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  285.2MB/8.628GB
+ 613d8ce7c99d Downloading [=========================>                         ]   73.4MB/145MB
+ 613d8ce7c99d Downloading [=========================>                         ]   73.4MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  286.3MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  287.3MB/8.628GB
+ 613d8ce7c99d Downloading [=========================>                         ]   73.4MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  288.4MB/8.628GB
+ 613d8ce7c99d Downloading [=========================>                         ]   73.4MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  290.5MB/8.628GB
+ 613d8ce7c99d Downloading [=========================>                         ]   73.4MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  291.5MB/8.628GB
+ 613d8ce7c99d Downloading [=========================>                         ]  74.45MB/145MB
+ 613d8ce7c99d Downloading [==========================>                        ]   75.5MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  293.6MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  294.6MB/8.628GB
+ 613d8ce7c99d Downloading [==========================>                        ]  76.55MB/145MB
+ 613d8ce7c99d Downloading [==========================>                        ]  76.55MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  295.7MB/8.628GB
+ 613d8ce7c99d Downloading [==========================>                        ]  76.55MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  296.7MB/8.628GB
+ 613d8ce7c99d Downloading [==========================>                        ]  76.55MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  298.8MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  299.9MB/8.628GB
+ 613d8ce7c99d Downloading [==========================>                        ]  77.59MB/145MB
+ 613d8ce7c99d Downloading [==========================>                        ]  77.59MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  300.9MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]    302MB/8.628GB
+ 613d8ce7c99d Downloading [===========================>                       ]  78.64MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  304.1MB/8.628GB
+ 613d8ce7c99d Downloading [===========================>                       ]  79.69MB/145MB
+ 613d8ce7c99d Downloading [===========================>                       ]  79.69MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  305.1MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  306.2MB/8.628GB
+ 613d8ce7c99d Downloading [===========================>                       ]  79.69MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  307.2MB/8.628GB
+ 613d8ce7c99d Downloading [===========================>                       ]  79.69MB/145MB
+ 613d8ce7c99d Downloading [===========================>                       ]  79.69MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  309.3MB/8.628GB
+ 613d8ce7c99d Downloading [===========================>                       ]  79.69MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  310.4MB/8.628GB
+ 613d8ce7c99d Downloading [===========================>                       ]  80.74MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  311.4MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  312.5MB/8.628GB
+ 613d8ce7c99d Downloading [============================>                      ]  81.79MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  312.5MB/8.628GB
+ 613d8ce7c99d Downloading [============================>                      ]  81.79MB/145MB
+ 613d8ce7c99d Downloading [============================>                      ]  82.84MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  312.5MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  313.5MB/8.628GB
+ 613d8ce7c99d Downloading [============================>                      ]  82.84MB/145MB
+ 613d8ce7c99d Downloading [============================>                      ]  82.84MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  316.7MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  318.8MB/8.628GB
+ 613d8ce7c99d Downloading [============================>                      ]  83.89MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  320.9MB/8.628GB
+ 613d8ce7c99d Downloading [============================>                      ]  83.89MB/145MB
+ 613d8ce7c99d Downloading [=============================>                     ]  84.93MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  321.9MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]    323MB/8.628GB
+ 613d8ce7c99d Downloading [=============================>                     ]  84.93MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  325.1MB/8.628GB
+ 613d8ce7c99d Downloading [=============================>                     ]  84.93MB/145MB
+ 613d8ce7c99d Downloading [=============================>                     ]  84.93MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  326.1MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  327.2MB/8.628GB
+ 613d8ce7c99d Downloading [=============================>                     ]  85.98MB/145MB
+ 613d8ce7c99d Downloading [=============================>                     ]  85.98MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  328.2MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  87.03MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  330.3MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  331.4MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  88.08MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  332.4MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  88.08MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  333.4MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  88.08MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  335.5MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  88.08MB/145MB
+ 613d8ce7c99d Downloading [==============================>                    ]  88.08MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  336.6MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  88.08MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  337.6MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  89.13MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  338.7MB/8.628GB
+ 613d8ce7c99d Downloading [==============================>                    ]  89.13MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  340.8MB/8.628GB
+ 613d8ce7c99d Downloading [===============================>                   ]  90.18MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  340.8MB/8.628GB
+ 613d8ce7c99d Downloading [===============================>                   ]  90.18MB/145MB
+ 9b150a6e8f7b Downloading [=>                                                 ]  341.8MB/8.628GB
+ 9b150a6e8f7b Downloading [=>                                                 ]  343.9MB/8.628GB
+ 613d8ce7c99d Downloading [===============================>                   ]  91.23MB/145MB
+ 613d8ce7c99d Downloading [===============================>                   ]  91.23MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]    346MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  347.1MB/8.628GB
+ 613d8ce7c99d Downloading [===============================>                   ]  91.23MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  348.1MB/8.628GB
+ 613d8ce7c99d Downloading [===============================>                   ]  92.27MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  349.2MB/8.628GB
+ 613d8ce7c99d Downloading [===============================>                   ]  92.27MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  351.3MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  93.32MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  352.3MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  353.4MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  355.5MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  356.5MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  357.6MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  358.6MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  360.7MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  361.8MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  362.8MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  94.37MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  363.9MB/8.628GB
+ 613d8ce7c99d Downloading [================================>                  ]  95.42MB/145MB
+ 613d8ce7c99d Downloading [=================================>                 ]  97.52MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]    366MB/8.628GB
+ 613d8ce7c99d Downloading [=================================>                 ]  97.52MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]    367MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  368.1MB/8.628GB
+ 613d8ce7c99d Downloading [=================================>                 ]  97.52MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  369.1MB/8.628GB
+ 613d8ce7c99d Downloading [=================================>                 ]  97.52MB/145MB
+ 613d8ce7c99d Downloading [=================================>                 ]  98.57MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  369.1MB/8.628GB
+ 613d8ce7c99d Downloading [=================================>                 ]  98.57MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  369.1MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  369.1MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  370.1MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  374.3MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  377.5MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  378.5MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  379.6MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  381.7MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  382.7MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  383.8MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  99.61MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  384.8MB/8.628GB
+ 613d8ce7c99d Downloading [==================================>                ]  100.7MB/145MB
+ 613d8ce7c99d Downloading [===================================>               ]  101.7MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  386.9MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  101.7MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]    388MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  101.7MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]    389MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  390.1MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  101.7MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  392.2MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  102.8MB/145MB
+ 613d8ce7c99d Downloading [===================================>               ]  102.8MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  393.2MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  394.3MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  102.8MB/145MB
+ 613d8ce7c99d Downloading [===================================>               ]  102.8MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  395.3MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  395.3MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  102.8MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  395.3MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  103.7MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  395.3MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  103.7MB/145MB
+ 613d8ce7c99d Downloading [===================================>               ]  103.7MB/145MB
+ 9b150a6e8f7b Downloading [==>                                                ]  395.3MB/8.628GB
+ 9b150a6e8f7b Downloading [==>                                                ]  395.3MB/8.628GB
+ 613d8ce7c99d Downloading [===================================>               ]  103.7MB/145MB
+short read: expected 145024493 bytes but got 103679168: unexpected EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial mailman__P5SpvAc failed: Agent setup failed with exit code 1. See logs in jobs/2026-02-28__19-12-47/mailman__P5SpvAc/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial extract-elf__ssp9GCx failed: Agent setup failed with exit code 35. See logs in jobs/2026-02-28__19-12-47/extract-elf__ssp9GCx/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial protein-assembly__4MMi8qH failed: Docker compose command failed for environment protein-assembly. Command: docker compose -p protein-assembly__4mmi8qh --project-directory /home/kw/.cache/harbor/tasks/mJUNThPAPTj7sAa9DCoPrh/protein-assembly/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/protein-assembly:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/protein-assembly/manifests/sha256:94de701b57e7ecfdbada6044f8534876e4b58874f8f313184dadc4d7533e0818": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial fix-code-vulnerability__sRUKV8r failed: Docker compose command failed for environment fix-code-vulnerability. Command: docker compose -p fix-code-vulnerability__srukv8r --project-directory /home/kw/.cache/harbor/tasks/2XNt9VEmH8r9FJdPeH9UxU/fix-code-vulnerability/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/fix-code-vulnerability:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/fix-code-vulnerability/manifests/sha256:cac325252991f823713b2d0441502972901dd782bd67f66c03d9b1e410dac5c0": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial mcmc-sampling-stan__gTjyBLE failed: Docker compose command failed for environment mcmc-sampling-stan. Command: docker compose -p mcmc-sampling-stan__gtjyble --project-directory /home/kw/.cache/harbor/tasks/jAoUooKp48ZpCL53Ra9yUk/mcmc-sampling-stan/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/mcmc-sampling-stan:20251031 Pulling 
+ Image alexgshaw/mcmc-sampling-stan:20251031 Error failed to resolve reference "docker.io/alexgshaw/mcmc-sampling-stan:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/mcmc-sampling-stan/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/mcmc-sampling-stan:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/mcmc-sampling-stan/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial regex-log__rhG3dvh failed: Agent setup failed with exit code 1. See logs in jobs/2026-02-28__19-12-47/regex-log__rhG3dvh/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial filter-js-from-html__aiyiFbb failed: Docker compose command failed for environment filter-js-from-html. Command: docker compose -p filter-js-from-html__aiyifbb --project-directory /home/kw/.cache/harbor/tasks/SeKnWxFXAqYwFdRQvLn2Wk/filter-js-from-html/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/filter-js-from-html:20251031 Pulling 
+ 99fd6525a4b7 Pulling fs layer 
+ ad4a7a69f112 Pulling fs layer 
+ 9a039149dac2 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/9a/9a039149dac2d0cd106ac7df186a80bbf8e435adc173e85f45dbe07872eff87a/data?expires=1772285994&signature=osvMI%2Bpx67LoDpo2Jer%2Bqa7QPwg%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial feal-differential-cryptanalysis__udGHh66 failed: Docker compose command failed for environment feal-differential-cryptanalysis. Command: docker compose -p feal-differential-cryptanalysis__udghh66 --project-directory /home/kw/.cache/harbor/tasks/RyWCxfjAf9RhapMxS2dMks/feal-differential-cryptanalysis/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/feal-differential-cryptanalysis:20251031 Pulling 
+ Image alexgshaw/feal-differential-cryptanalysis:20251031 Error failed to resolve reference "docker.io/alexgshaw/feal-differential-cryptanalysis:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/feal-differential-cryptanalysis/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/feal-differential-cryptanalysis:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/feal-differential-cryptanalysis/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial polyglot-c-py__TRkBgf4 failed: Agent setup failed with exit code 1. See logs in jobs/2026-02-28__19-12-47/polyglot-c-py__TRkBgf4/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial cancel-async-tasks__wiCFVtT failed: Agent setup failed with exit code 1. See logs in jobs/2026-02-28__19-12-47/cancel-async-tasks__wiCFVtT/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial bn-fit-modify__PwJHoRv failed: Docker compose command failed for environment bn-fit-modify. Command: docker compose -p bn-fit-modify__pwjhorv --project-directory /home/kw/.cache/harbor/tasks/XX65orYkXVMqTQu7C3JUZY/bn-fit-modify/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/bn-fit-modify:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/e2/e22baa862c29eb5076f82ba45527df74ce0b393a03ee6c08697279b852acd354/data?expires=1772286081&signature=mjEBPIeIi1AioSpxP%2FvNi317A6M%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial fix-ocaml-gc__tLpT3TY failed: Docker compose command failed for environment fix-ocaml-gc. Command: docker compose -p fix-ocaml-gc__tlpt3ty --project-directory /home/kw/.cache/harbor/tasks/dXxv47w6VWWtstSMMiefPe/fix-ocaml-gc/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/fix-ocaml-gc:20251031 Pulling 
+ 9dc0a3a34bff Pulling fs layer 
+ 7a95f9abdbff Pulling fs layer 
+ 5502f4618d3b Pulling fs layer 
+ 5502f4618d3b Downloading [>                                                  ]  1.049MB/528.3MB
+ 5502f4618d3b Downloading [>                                                  ]  2.097MB/528.3MB
+ 5502f4618d3b Downloading [>                                                  ]  2.097MB/528.3MB
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/9d/9dc0a3a34bff39bbf862d8936950eb5842fc267e39efc9aa8ea4447d76a1dee1/data?expires=1772286086&signature=x%2Bv5wiAnV%2F49UDcMBV8a4s0vAt4%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial git-leak-recovery__2VbSBpF failed: Docker compose command failed for environment git-leak-recovery. Command: docker compose -p git-leak-recovery__2vbsbpf --project-directory /home/kw/.cache/harbor/tasks/mig33pqGgsU4uNZ5dgPebg/git-leak-recovery/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/git-leak-recovery:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/git-leak-recovery/manifests/sha256:62160e522a4238b8bcd522411ea97b5b200f811e5899d34947e66809bef7e586": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial build-cython-ext__2p8eSAA failed: Agent setup failed with exit code 2. See logs in jobs/2026-02-28__19-12-47/build-cython-ext__2p8eSAA/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial financial-document-processor__gzZbrmg failed: Agent setup timed out after 360.0 seconds
+Not retrying trial because the maximum number of retries has been reached
+Trial model-extraction-relu-logits__Jur5ej7 failed: Agent setup failed with exit code 35. See logs in jobs/2026-02-28__19-12-47/model-extraction-relu-logits__Jur5ej7/agent/setup
+Not retrying trial because the maximum number of retries has been reached
+Trial nginx-request-logging__7poVcKq failed: Docker compose command failed for environment nginx-request-logging. Command: docker compose -p nginx-request-logging__7povckq --project-directory /home/kw/.cache/harbor/tasks/eUViXxKXCzTue7ywZW59ct/nginx-request-logging/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/nginx-request-logging:20251031 Pulling 
+ Image alexgshaw/nginx-request-logging:20251031 Error failed to resolve reference "docker.io/alexgshaw/nginx-request-logging:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/nginx-request-logging/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/nginx-request-logging:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/nginx-request-logging/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial sqlite-db-truncate__QbKJr7n failed: Docker compose command failed for environment sqlite-db-truncate. Command: docker compose -p sqlite-db-truncate__qbkjr7n --project-directory /home/kw/.cache/harbor/tasks/2hEZAwigfHAA5cnDNAJvfT/sqlite-db-truncate/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/sqlite-db-truncate:20251031 Pulling 
+ Image alexgshaw/sqlite-db-truncate:20251031 Error failed to resolve reference "docker.io/alexgshaw/sqlite-db-truncate:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/sqlite-db-truncate/manifests/20251031": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/sqlite-db-truncate:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/sqlite-db-truncate/manifests/20251031": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial sanitize-git-repo__uNs2VGE failed: Docker compose command failed for environment sanitize-git-repo. Command: docker compose -p sanitize-git-repo__uns2vge --project-directory /home/kw/.cache/harbor/tasks/WNjEws4zKtRNWJABpoU892/sanitize-git-repo/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/sanitize-git-repo:20251031 Pulling 
+ Image alexgshaw/sanitize-git-repo:20251031 Error failed to resolve reference "docker.io/alexgshaw/sanitize-git-repo:20251031": failed to authorize: failed to fetch oauth token: Post "https://auth.docker.io/token": EOF
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/sanitize-git-repo:20251031": failed to authorize: failed to fetch oauth token: Post "https://auth.docker.io/token": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial build-pmars__iMYxzft failed: Docker compose command failed for environment build-pmars. Command: docker compose -p build-pmars__imyxzft --project-directory /home/kw/.cache/harbor/tasks/TXGXVihdFyGLhhWJdjKoXE/build-pmars/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/build-pmars:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/7b/7b5bae6c1dea946c16c088a0f254182013f7040298420d0021612fe1b1a2e5ee/data?expires=1772286789&signature=dLdN8SKw8PcRjLqsxqwHB8Tef4E%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial rstan-to-pystan__LgCX28u failed: Docker compose command failed for environment rstan-to-pystan. Command: docker compose -p rstan-to-pystan__lgcx28u --project-directory /home/kw/.cache/harbor/tasks/869oU8dUyJHL4uUFPzhKJM/rstan-to-pystan/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/rstan-to-pystan:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/rstan-to-pystan/manifests/sha256:b23d48839408524326095c15ada4145c772b87646cf299022ff1f58c97baba91": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial sqlite-with-gcov__8HmY5v3 failed: Docker compose command failed for environment sqlite-with-gcov. Command: docker compose -p sqlite-with-gcov__8hmy5v3 --project-directory /home/kw/.cache/harbor/tasks/ZDKh9BtehT8SorZTrWLJsn/sqlite-with-gcov/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/sqlite-with-gcov:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/sqlite-with-gcov/manifests/sha256:f986820b00c74ce75db7288719d364df313fde7c7917bea6eb6352a08431a89f": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial openssl-selfsigned-cert__JhKgyUz failed: Docker compose command failed for environment openssl-selfsigned-cert. Command: docker compose -p openssl-selfsigned-cert__jhkgyuz --project-directory /home/kw/.cache/harbor/tasks/Skg3RaRNtgRKSRBoJaSgjx/openssl-selfsigned-cert/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/openssl-selfsigned-cert:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/70/7082de4dab44888b5b5e9c0f9de09b30bc8cd28b329edc6d153fb5ce3dca5f24/data?expires=1772286797&signature=trflo30cCNUs7DjeCfPRM2U2ueM%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial constraints-scheduling__Gek3S2j failed: Docker compose command failed for environment constraints-scheduling. Command: docker compose -p constraints-scheduling__gek3s2j --project-directory /home/kw/.cache/harbor/tasks/CrxDfvhBFmo3ahvG2RfDM3/constraints-scheduling/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/constraints-scheduling:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/constraints-scheduling/manifests/sha256:567ce5a189f8d11ac461790876e934cc7af38391baf89a78f95f4dafc1fec3b0": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial dna-insert__pDFAwza failed: Docker compose command failed for environment dna-insert. Command: docker compose -p dna-insert__pdfawza --project-directory /home/kw/.cache/harbor/tasks/Kk55pgeAWyodY7sZSnMpXw/dna-insert/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/dna-insert:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/dna-insert/manifests/sha256:4dd8760694e355de85ecf03605cb487ccdb33322f6afad513d2920829baa33b2": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial vulnerable-secret__9oHer3U failed: Docker compose command failed for environment vulnerable-secret. Command: docker compose -p vulnerable-secret__9oher3u --project-directory /home/kw/.cache/harbor/tasks/RkUWMSfgcaHLyc3cnCt62s/vulnerable-secret/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/vulnerable-secret:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/54/54e36ed5f26ccc7489bde8745c86e6d8f2ce8927d2a5719316480716f550bf54/data?expires=1772286806&signature=qVIU1Srte9FtJVjemFwrwsrmq2U%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial dna-assembly__5GLzG2x failed: Docker compose command failed for environment dna-assembly. Command: docker compose -p dna-assembly__5glzg2x --project-directory /home/kw/.cache/harbor/tasks/ArEmuSGC435pAkSA7cv8qw/dna-assembly/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/dna-assembly:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/94/940e10327e89b8034aa335c48e8e643414809f5ee2ffd2d2854688b996c822ee/data?expires=1772286810&signature=8nYrk4hMKcqAPFcA2r99rTTE1JI%3D&version=3": EOF
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Trial pytorch-model-recovery__C3ioHX8 failed: Docker compose command failed for environment pytorch-model-recovery. Command: docker compose -p pytorch-model-recovery__c3iohx8 --project-directory /home/kw/.cache/harbor/tasks/axUgVSxE9sjGUEHETA9Ddx/pytorch-model-recovery/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/pytorch-model-recovery:20251031 Pulling 
+ Image alexgshaw/pytorch-model-recovery:20251031 Error failed to resolve reference "docker.io/alexgshaw/pytorch-model-recovery:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/pytorch-model-recovery/manifests/20251031": dial tcp 198.18.1.175:443: i/o timeout
+Error response from daemon: failed to resolve reference "docker.io/alexgshaw/pytorch-model-recovery:20251031": failed to do request: Head "https://registry-1.docker.io/v2/alexgshaw/pytorch-model-recovery/manifests/20251031": dial tcp 198.18.1.175:443: i/o timeout
+. Stderr: None. 
+Not retrying trial because the maximum number of retries has been reached
+Exception AgentTimeoutError is in exclude_exceptions, not retrying
+Not retrying trial because the exception is not in include_exceptions or the maximum number of retries has been reached

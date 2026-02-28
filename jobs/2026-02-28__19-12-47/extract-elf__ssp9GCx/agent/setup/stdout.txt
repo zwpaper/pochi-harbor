@@ -1,0 +1,62 @@
+Get:1 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:3 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [3262 kB]
+Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:6 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [3471 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [34.8 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1242 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1883 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2017 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [38.1 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2275 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [34.6 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [49.5 kB]
+Fetched 14.7 MB in 5s (2693 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libcurl3t64-gnutls libcurl4t64
+The following NEW packages will be installed:
+  curl libcurl4t64
+The following packages will be upgraded:
+  libcurl3t64-gnutls
+1 upgraded, 2 newly installed, 0 to remove and 92 not upgraded.
+Need to get 902 kB of archives.
+After this operation, 1481 kB of additional disk space will be used.
+Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.7
+Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.7
+Ign:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.7
+Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.7
+Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.7
+Ign:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.7
+Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.7
+Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.7
+Ign:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.7
+Ign:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.7
+Ign:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.7
+Ign:3 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.7
+Get:1 http://security.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.7 [342 kB]
+Get:2 http://security.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.7 [227 kB]
+Get:3 http://security.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.7 [334 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 902 kB in 41s (22.0 kB/s)
+Selecting previously unselected package libcurl4t64:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 49547 files and directories currently installed.)
+Preparing to unpack .../libcurl4t64_8.5.0-2ubuntu10.7_amd64.deb ...
+Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.7) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_8.5.0-2ubuntu10.7_amd64.deb ...
+Unpacking curl (8.5.0-2ubuntu10.7) ...
+Preparing to unpack .../libcurl3t64-gnutls_8.5.0-2ubuntu10.7_amd64.deb ...
+Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.7) over (8.5.0-2ubuntu10.6) ...
+Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.7) ...
+Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.7) ...
+Setting up curl (8.5.0-2ubuntu10.7) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.6) ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to raw.githubusercontent.com:443 

@@ -1,0 +1,8 @@
+Trial build-pov-ray__T7KJBff failed: Docker compose command failed for environment build-pov-ray. Command: docker compose -p build-pov-ray__t7kjbff --project-directory /home/kw/.cache/harbor/tasks/H9EGgCK3p6caXKKnhsqu6a/build-pov-ray/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/build-pov-ray:20251031 Pulling 
+ 4f4fb700ef54 Pulling fs layer 
+ e4dfad2790bf Pulling fs layer 
+ b554f12c25e5 Pulling fs layer 
+ 38fb19e2afbe Pulling fs layer 
+ 4f4fb700ef54 Download complete 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/build-pov-ray/blobs/sha256:b554f12c25e541cbcd8a92c9b85bf75360687434756d63742c9035be3f51759c": EOF
+. Stderr: None. 

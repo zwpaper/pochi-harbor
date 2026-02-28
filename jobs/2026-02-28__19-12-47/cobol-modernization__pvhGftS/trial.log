@@ -1,0 +1,12 @@
+Trial cobol-modernization__pvhGftS failed: Docker compose command failed for environment cobol-modernization. Command: docker compose -p cobol-modernization__pvhgfts --project-directory /home/kw/.cache/harbor/tasks/SmKKTsxNnHaHqhzng8SrD2/cobol-modernization/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/cobol-modernization:20251031 Pulling 
+ 7e88bf276da0 Pulling fs layer 
+ bb31e0971ff4 Pulling fs layer 
+ b1badc6e5066 Pulling fs layer 
+ d55dfff74d98 Pulling fs layer 
+ e97853488aa5 Pulling fs layer 
+ 63ff33ad641b Pulling fs layer 
+ a5aa2831c132 Pulling fs layer 
+ ff9dbe1ab819 Pulling fs layer 
+ 17c435b06bac Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/cobol-modernization/blobs/sha256:b1badc6e50664185acfaa0ca255d8076061c2a9d881cecaaad281ae11af000ce": EOF
+. Stderr: None. 

@@ -1,0 +1,90 @@
+{
+    "id": "9578a46b-8ad5-42d4-8a05-ea5cd38ac1c0",
+    "task_name": "qemu-alpine-ssh",
+    "trial_name": "qemu-alpine-ssh__9UoziTk",
+    "trial_uri": "file:///home/kw/code/work/pochi-harbor/jobs/2026-02-28__19-12-47/qemu-alpine-ssh__9UoziTk",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "qemu-alpine-ssh"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "a6cd0bf0752902f3e284a6a9672d801de83fb9d0cf769c95f09fed2fd213548c",
+    "config": {
+        "task": {
+            "path": "qemu-alpine-ssh",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "qemu-alpine-ssh__9UoziTk",
+        "trials_dir": "jobs/2026-02-28__19-12-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b880ed1-c0a6-47db-8cfc-a14278c2b1f4"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": 1189327,
+        "n_cache_tokens": 1108480,
+        "n_output_tokens": 10089,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-02-28T12:24:27.950909Z",
+    "finished_at": "2026-02-28T12:36:30.523473Z",
+    "environment_setup": {
+        "started_at": "2026-02-28T12:24:27.951511Z",
+        "finished_at": "2026-02-28T12:26:32.899101Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-28T12:26:32.899108Z",
+        "finished_at": "2026-02-28T12:26:56.023494Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-02-28T12:26:56.023526Z",
+        "finished_at": "2026-02-28T12:36:13.527481Z"
+    },
+    "verifier": {
+        "started_at": "2026-02-28T12:36:13.527576Z",
+        "finished_at": "2026-02-28T12:36:18.442876Z"
+    }
+}

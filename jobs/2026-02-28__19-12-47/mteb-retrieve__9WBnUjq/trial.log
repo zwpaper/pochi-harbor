@@ -1,0 +1,12 @@
+Trial mteb-retrieve__9WBnUjq failed: Docker compose command failed for environment mteb-retrieve. Command: docker compose -p mteb-retrieve__9wbnujq --project-directory /home/kw/.cache/harbor/tasks/J63TLMqMZcCeiRe8KAiy5T/mteb-retrieve/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/mteb-retrieve:20251031 Pulling 
+ 7bb3f3185069 Pulling fs layer 
+ eb09864e43e6 Pulling fs layer 
+ 7c5b4bbef033 Pulling fs layer 
+ cc20e1fa4454 Pulling fs layer 
+ 1095d7775278 Pulling fs layer 
+ 420d334c0bc9 Pulling fs layer 
+ abe1fea37542 Pulling fs layer 
+ 13e30b69e389 Pulling fs layer 
+ 15d8343a97c7 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/mteb-retrieve/blobs/sha256:420d334c0bc9bf93af4d089f079c20c055ba92277d9b44b7b2e0594652e67711": EOF
+. Stderr: None. 

@@ -1,0 +1,11 @@
+Trial make-mips-interpreter__ZW2hBVF failed: Docker compose command failed for environment make-mips-interpreter. Command: docker compose -p make-mips-interpreter__zw2hbvf --project-directory /home/kw/.cache/harbor/tasks/LeNjAXy6fbV5X852Td8iV9/make-mips-interpreter/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/make-mips-interpreter:20251031 Pulling 
+ 681c6e839459 Pulling fs layer 
+ 3976a9caed20 Pulling fs layer 
+ f30729b4a71b Pulling fs layer 
+ c746c2b5d97c Pulling fs layer 
+ d252566affb2 Pulling fs layer 
+ ac66e6ab6701 Pulling fs layer 
+ 7676a6ce786d Pulling fs layer 
+ f30729b4a71b Download complete 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/ac/ac66e6ab6701baaa715310827e72549cfe3ba33bb572a10273366a441c50e844/data?expires=1772284802&signature=TC4U%2BKmwV2rLM0S4mIjQH3sPdp4%3D&version=3": EOF
+. Stderr: None. 

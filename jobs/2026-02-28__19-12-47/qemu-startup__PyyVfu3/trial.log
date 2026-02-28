@@ -1,0 +1,10 @@
+Trial qemu-startup__PyyVfu3 failed: Docker compose command failed for environment qemu-startup. Command: docker compose -p qemu-startup__pyyvfu3 --project-directory /home/kw/.cache/harbor/tasks/gHS2mTGhPaYTuJWpCkw4J9/qemu-startup/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/qemu-startup:20251031 Pulling 
+ a0c6b4cb481d Pulling fs layer 
+ 851bb1368529 Pulling fs layer 
+ 3d84f27ee395 Pulling fs layer 
+ 90b04f7874fd Pulling fs layer 
+ a74b6126a333 Pulling fs layer 
+ d207cc66da44 Pulling fs layer 
+ fe2b0116b821 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/qemu-startup/blobs/sha256:3d84f27ee395d98d8ca14617b744516d447ce103b851c39a1478669fcb387097": EOF
+. Stderr: None. 

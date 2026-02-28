@@ -1,0 +1,3 @@
+Trial fix-git__khai5h5 failed: Docker compose command failed for environment fix-git. Command: docker compose -p fix-git__khai5h5 --project-directory /home/kw/.cache/harbor/tasks/kzqjKVWxvHZxV5xyLNLqJi/fix-git/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/fix-git:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/fix-git/manifests/sha256:61e431c00c58df652287aadce5457634d9f9330cfdd153ebdf2802df0d540119": EOF
+. Stderr: None. 

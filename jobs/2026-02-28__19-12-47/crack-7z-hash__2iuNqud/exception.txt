@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 356, in run
+    await self._setup_environment()
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 202, in _setup_environment
+    await self._start_environment_with_retry()
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 193, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/__init__.py", line 393, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 214, in _start_environment_with_retry
+    await asyncio.wait_for(
+  File "/opt/miniconda3/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 239, in start
+    await self._run_docker_compose_command(["up", "-d"])
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 212, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment crack-7z-hash. Command: docker compose -p crack-7z-hash__2iunqud --project-directory /home/kw/.cache/harbor/tasks/MAyhSNHCZegJvZuPyTitjJ/crack-7z-hash/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/crack-7z-hash:20251031 Pulling 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/cd/cd0a22dc1d928e3075936ac702626ae529a683ac25aed25103ffaf33b72074d5/data?expires=1772283935&signature=Dcga%2B8F%2BfufR%2FN49iCo4Ezz4%2FQY%3D&version=3": EOF
+. Stderr: None. 

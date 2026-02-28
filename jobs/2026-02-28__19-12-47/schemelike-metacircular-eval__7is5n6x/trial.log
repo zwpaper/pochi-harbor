@@ -1,0 +1,10 @@
+Trial schemelike-metacircular-eval__7is5n6x failed: Docker compose command failed for environment schemelike-metacircular-eval. Command: docker compose -p schemelike-metacircular-eval__7is5n6x --project-directory /home/kw/.cache/harbor/tasks/YkDjArg6hKdFYEmdiPrztY/schemelike-metacircular-eval/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/schemelike-metacircular-eval:20251031 Pulling 
+ a4cd59c2a534 Pulling fs layer 
+ d55dfff74d98 Pulling fs layer 
+ b1badc6e5066 Pulling fs layer 
+ 7e88bf276da0 Pulling fs layer 
+ 63ff33ad641b Pulling fs layer 
+ e97853488aa5 Pulling fs layer 
+ bec7c2f1120b Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/d5/d55dfff74d98ac204fa78f18533eecc39a8bd69bd9384a73572c6d09f06b11fc/data?expires=1772284334&signature=Ve3sGiIL4YqBldPmY7BtwrB9S%2FE%3D&version=3": EOF
+. Stderr: None. 

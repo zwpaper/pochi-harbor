@@ -1,0 +1,6 @@
+Trial filter-js-from-html__aiyiFbb failed: Docker compose command failed for environment filter-js-from-html. Command: docker compose -p filter-js-from-html__aiyifbb --project-directory /home/kw/.cache/harbor/tasks/SeKnWxFXAqYwFdRQvLn2Wk/filter-js-from-html/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/filter-js-from-html:20251031 Pulling 
+ 99fd6525a4b7 Pulling fs layer 
+ ad4a7a69f112 Pulling fs layer 
+ 9a039149dac2 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/9a/9a039149dac2d0cd106ac7df186a80bbf8e435adc173e85f45dbe07872eff87a/data?expires=1772285994&signature=osvMI%2Bpx67LoDpo2Jer%2Bqa7QPwg%3D&version=3": EOF
+. Stderr: None. 

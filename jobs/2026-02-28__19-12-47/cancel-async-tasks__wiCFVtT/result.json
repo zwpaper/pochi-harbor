@@ -1,0 +1,78 @@
+{
+    "id": "c6b5c5b8-6148-48a3-a941-72b5d37447ae",
+    "task_name": "cancel-async-tasks",
+    "trial_name": "cancel-async-tasks__wiCFVtT",
+    "trial_uri": "file:///home/kw/code/work/pochi-harbor/jobs/2026-02-28__19-12-47/cancel-async-tasks__wiCFVtT",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "cancel-async-tasks"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "283c70ca90688dc09a969d24e3ed137ba0f00d23018df68771bdf86526b82047",
+    "config": {
+        "task": {
+            "path": "cancel-async-tasks",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "cancel-async-tasks__wiCFVtT",
+        "trials_dir": "jobs/2026-02-28__19-12-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b880ed1-c0a6-47db-8cfc-a14278c2b1f4"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "Agent setup failed with exit code 1. See logs in jobs/2026-02-28__19-12-47/cancel-async-tasks__wiCFVtT/agent/setup",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 357, in run\n    await self._setup_agent()\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 230, in _setup_agent\n    await asyncio.wait_for(\n  File \"/opt/miniconda3/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 123, in setup\n    raise RuntimeError(\nRuntimeError: Agent setup failed with exit code 1. See logs in jobs/2026-02-28__19-12-47/cancel-async-tasks__wiCFVtT/agent/setup\n",
+        "occurred_at": "2026-02-28T20:51:06.774451"
+    },
+    "started_at": "2026-02-28T12:50:50.957153Z",
+    "finished_at": "2026-02-28T12:51:17.533960Z",
+    "environment_setup": {
+        "started_at": "2026-02-28T12:50:50.957786Z",
+        "finished_at": "2026-02-28T12:50:57.021337Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-02-28T12:50:57.021345Z",
+        "finished_at": "2026-02-28T12:51:06.774016Z"
+    },
+    "agent_execution": null,
+    "verifier": null
+}

@@ -1,0 +1,75 @@
+{
+    "id": "e9e2b6b0-63f6-4fe9-bd14-ba534ab38397",
+    "task_name": "protein-assembly",
+    "trial_name": "protein-assembly__4MMi8qH",
+    "trial_uri": "file:///home/kw/code/work/pochi-harbor/jobs/2026-02-28__19-12-47/protein-assembly__4MMi8qH",
+    "task_id": {
+        "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+        "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+        "path": "protein-assembly"
+    },
+    "source": "terminal-bench",
+    "task_checksum": "b8df06c6c42605ec37afb3b9c6e2f4feb1be9663380bd7129fcbaa9559253a60",
+    "config": {
+        "task": {
+            "path": "protein-assembly",
+            "git_url": "https://github.com/laude-institute/terminal-bench-2.git",
+            "git_commit_id": "69671fbaac6d67a7ef0dfec016cc38a64ef7a77c",
+            "overwrite": false,
+            "download_dir": null,
+            "source": "terminal-bench"
+        },
+        "trial_name": "protein-assembly__4MMi8qH",
+        "trials_dir": "jobs/2026-02-28__19-12-47",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "gpt-5.3-codex",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "job_id": "5b880ed1-c0a6-47db-8cfc-a14278c2b1f4"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "unknown",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "Docker compose command failed for environment protein-assembly. Command: docker compose -p protein-assembly__4mmi8qh --project-directory /home/kw/.cache/harbor/tasks/mJUNThPAPTj7sAa9DCoPrh/protein-assembly/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/protein-assembly:20251031 Pulling \nfailed to copy: httpReadSeeker: failed open: failed to do request: Get \"https://registry-1.docker.io/v2/alexgshaw/protein-assembly/manifests/sha256:94de701b57e7ecfdbada6044f8534876e4b58874f8f313184dadc4d7533e0818\": EOF\n. Stderr: None. ",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 356, in run\n    await self._setup_environment()\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 202, in _setup_environment\n    await self._start_environment_with_retry()\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 393, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/miniconda3/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/miniconda3/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 214, in _start_environment_with_retry\n    await asyncio.wait_for(\n  File \"/opt/miniconda3/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 239, in start\n    await self._run_docker_compose_command([\"up\", \"-d\"])\n  File \"/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 212, in _run_docker_compose_command\n    raise RuntimeError(\nRuntimeError: Docker compose command failed for environment protein-assembly. Command: docker compose -p protein-assembly__4mmi8qh --project-directory /home/kw/.cache/harbor/tasks/mJUNThPAPTj7sAa9DCoPrh/protein-assembly/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/protein-assembly:20251031 Pulling \nfailed to copy: httpReadSeeker: failed open: failed to do request: Get \"https://registry-1.docker.io/v2/alexgshaw/protein-assembly/manifests/sha256:94de701b57e7ecfdbada6044f8534876e4b58874f8f313184dadc4d7533e0818\": EOF\n. Stderr: None. \n",
+        "occurred_at": "2026-02-28T20:47:34.344491"
+    },
+    "started_at": "2026-02-28T12:47:31.771016Z",
+    "finished_at": "2026-02-28T12:47:34.449331Z",
+    "environment_setup": {
+        "started_at": "2026-02-28T12:47:31.771833Z",
+        "finished_at": "2026-02-28T12:47:34.343709Z"
+    },
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": null
+}

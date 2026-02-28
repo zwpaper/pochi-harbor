@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 356, in run
+    await self._setup_environment()
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 202, in _setup_environment
+    await self._start_environment_with_retry()
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 193, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 112, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 157, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/_utils.py", line 111, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/__init__.py", line 393, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 116, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py", line 214, in _start_environment_with_retry
+    await asyncio.wait_for(
+  File "/opt/miniconda3/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 239, in start
+    await self._run_docker_compose_command(["up", "-d"])
+  File "/home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 212, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment make-mips-interpreter. Command: docker compose -p make-mips-interpreter__zw2hbvf --project-directory /home/kw/.cache/harbor/tasks/LeNjAXy6fbV5X852Td8iV9/make-mips-interpreter/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/make-mips-interpreter:20251031 Pulling 
+ 681c6e839459 Pulling fs layer 
+ 3976a9caed20 Pulling fs layer 
+ f30729b4a71b Pulling fs layer 
+ c746c2b5d97c Pulling fs layer 
+ d252566affb2 Pulling fs layer 
+ ac66e6ab6701 Pulling fs layer 
+ 7676a6ce786d Pulling fs layer 
+ f30729b4a71b Download complete 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://production.cloudflare.docker.com/registry-v2/docker/registry/v2/blobs/sha256/ac/ac66e6ab6701baaa715310827e72549cfe3ba33bb572a10273366a441c50e844/data?expires=1772284802&signature=TC4U%2BKmwV2rLM0S4mIjQH3sPdp4%3D&version=3": EOF
+. Stderr: None. 

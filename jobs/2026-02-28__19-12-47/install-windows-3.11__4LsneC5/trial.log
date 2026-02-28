@@ -1,0 +1,17 @@
+Trial install-windows-3.11__4LsneC5 failed: Docker compose command failed for environment install-windows-3.11. Command: docker compose -p install-windows-3-11__4lsnec5 --project-directory /home/kw/.cache/harbor/tasks/7s8y623XYuDhmBG6ERABwC/install-windows-3.11/environment -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-base.yaml -f /home/kw/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-prebuilt.yaml up -d. Return code: 1. Stdout:  Image alexgshaw/install-windows-3.11:20251031 Pulling 
+ d6235d7dba47 Pulling fs layer 
+ 4b3ffd8ccb52 Pulling fs layer 
+ ffaea3d7f60b Pulling fs layer 
+ ef4914b59c87 Pulling fs layer 
+ 66867fb58315 Pulling fs layer 
+ ae99a0c74233 Pulling fs layer 
+ 28079ba6684f Pulling fs layer 
+ 7e68690a2ad4 Pulling fs layer 
+ 7316b97ab250 Pulling fs layer 
+ f013f756e970 Pulling fs layer 
+ 8831fcdb4845 Pulling fs layer 
+ 7307483e371a Pulling fs layer 
+ ceaf0d042491 Pulling fs layer 
+ 72d39465f9a0 Pulling fs layer 
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/alexgshaw/install-windows-3.11/blobs/sha256:ceaf0d042491f84f2c308027adc9b831f3a58ba882d455974ee7211a6eaddd3e": EOF
+. Stderr: None. 
