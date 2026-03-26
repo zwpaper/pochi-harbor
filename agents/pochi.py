@@ -39,7 +39,7 @@ class Pochi(BaseInstalledAgent):
     # this defined which version of pochi to install
     # we have to specify this so that the version could be shown in result.json
     def version(self) -> str | None:
-        return "v0.6.4"
+        return "v0.6.5"
 
     def parse_version(self, stdout: str) -> str:
         return stdout.strip()
