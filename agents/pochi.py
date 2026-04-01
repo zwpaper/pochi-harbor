@@ -6,9 +6,15 @@ import subprocess
 
 from harbor.models.agent.context import AgentContext
 from harbor.models.trial.paths import EnvironmentPaths
-from harbor.agents.installed.base import BaseInstalledAgent, ExecInput
+from harbor.agents.installed.base import (
+    BaseInstalledAgent,
+    with_prompt_template,
+    CliFlag,
+    EnvVar,
+)
+from harbor.environments.base import BaseEnvironment
 from pydantic import BaseModel
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 from harbor.models.trajectories import (
     Trajectory,
@@ -19,6 +25,7 @@ from harbor.models.trajectories import (
     FinalMetrics,
     Agent,
 )
+from harbor.models.trial.paths import EnvironmentPaths
 
 
 class ExecInput(BaseModel):
@@ -32,23 +39,80 @@ class Pochi(BaseInstalledAgent):
     def name() -> str:
         return "pochi"
 
-    # this is not used, maybe later version of harbor would use
+    @property
+    def _trajectory_path(self) -> PurePosixPath:
+        return PurePosixPath(EnvironmentPaths.agent_dir / "trajectory.json")
+
     def get_version_command(self) -> str | None:
         return 'export PATH="$HOME/.pochi/bin:$PATH"; pochi --version'
 
-    # this defined which version of pochi to install
-    # we have to specify this so that the version could be shown in result.json
-    def version(self) -> str | None:
-        return "v0.6.5"
-
     def parse_version(self, stdout: str) -> str:
         return stdout.strip()
-    
-    @property
-    def _install_agent_template_path(self) -> Path:
-        return Path(__file__).parent / "install-pochi.sh.j2"
 
-    def create_run_agent_commands(self, instruction: str) -> list[ExecInput]:
+    async def install(self, environment: BaseEnvironment) -> None:
+        # Install system packages (root)
+        await self.exec_as_root(
+            environment,
+            command="apt-get update && apt-get install -y curl ripgrep",
+            env={"DEBIAN_FRONTEND": "noninteractive"},
+        )
+        # Install pochi (as default user)
+        version_spec = f"pochi-{self._version}" if self._version else ""
+        await self.exec_as_agent(
+            environment,
+            command=(
+                "set -euo pipefail; "
+                f"curl -fsSL https://getpochi.com/install.sh | bash {version_spec} && "
+                "mkdir -p /logs/agent/pochi && "
+                "~/.pochi/bin/pochi --version"
+            ),
+        )
+        # Symlink pochi to /usr/local/bin (root)
+        await self.exec_as_root(
+            environment,
+            command="ln -sf ~/.pochi/bin/pochi /usr/local/bin/pochi",
+        )
+
+    def _build_register_skills_command(self) -> str | None:
+        """Return a shell command that copies skills to Pochi's skills directory."""
+        if not self.skills_dir:
+            return None
+        return (
+            f"mkdir -p $HOME/.agents/skills && "
+            f"cp -r {shlex.quote(self.skills_dir)}/* "
+            f"$HOME/.agents/skills/ 2>/dev/null || true"
+        )
+
+    def _build_register_mcp_servers_command(self) -> str | None:
+        """Return a shell command that writes MCP config to ~/.pochi/config.jsonc."""
+        if not self.mcp_servers:
+            return None
+        mcp_entries: list[str] = []
+        for server in self.mcp_servers:
+            if server.transport == "stdio":
+                cmd_parts = [server.command] + server.args if server.command else []
+                mcp_entries.append(
+                    f'  {json.dumps(server.name)}: {{"command": {json.dumps(shlex.join(cmd_parts))}}}'
+                )
+            else:
+                mcp_entries.append(
+                    f'  {json.dumps(server.name)}: {{"url": {json.dumps(server.url)}}}'
+                )
+        mcp_block = "{\n" + ",\n".join(mcp_entries) + "\n}"
+        escaped = shlex.quote(mcp_block)
+        return (
+            f"python3 -c \""
+            f"import json, pathlib; "
+            f"p = pathlib.Path('$HOME/.pochi/config.jsonc'); "
+            f"cfg = json.loads(p.read_text()) if p.exists() else {{}}; "
+            f"cfg.setdefault('mcpServers', {{}}).update(json.loads({escaped})); "
+            f"p.write_text(json.dumps(cfg, indent=2))\""
+        )
+
+    @with_prompt_template
+    async def run(
+        self, instruction: str, environment: BaseEnvironment, context: AgentContext
+    ) -> None:
         model = self.model_name if self.model_name else "google/gemini-3-flash"
 
         env = {
@@ -101,27 +165,43 @@ class Pochi(BaseInstalledAgent):
   }
 }"""
 
-        return [
-            ExecInput(
+        # Write config and set up environment
+        setup_command = (
+            "mkdir -p ~/.pochi && "
+            "cat << 'EOF' | sed "
+            "-e \"s/OPENAI_API_KEY/${OPENAI_API_KEY}/g\" "
+            "-e \"s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g\" "
+            "-e \"s/ANTHROPIC_API_KEY/${ANTHROPIC_API_KEY}/g\" "
+            "> ~/.pochi/config.jsonc\n"
+            f"{config_json}\n"
+            "EOF"
+        )
+
+        skills_command = self._build_register_skills_command()
+        if skills_command:
+            setup_command += f"\n{skills_command}"
+
+        mcp_command = self._build_register_mcp_servers_command()
+        if mcp_command:
+            setup_command += f"\n{mcp_command}"
+
+        await self.exec_as_agent(
+            environment,
+            command=setup_command,
+            env=env,
+        )
+
+        try:
+            await self.exec_as_agent(
+                environment,
                 command=(
-                    "cat << 'EOF' | sed "
-                    "-e \"s/OPENAI_API_KEY/${OPENAI_API_KEY}/g\" "
-                    "-e \"s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g\" "
-                    "-e \"s/ANTHROPIC_API_KEY/${ANTHROPIC_API_KEY}/g\" "
-                    "> ~/.pochi/config.jsonc\n"
-                    f"{config_json}\n"
-                    "EOF"
-                ),
-                env=env,
-            ),            
-            ExecInput(
-                command=(
+                    'export PATH="$HOME/.pochi/bin:$PATH"; '
                     "pochi "
                     f"--model {model} "
                     "--max-steps 200 "
                     "--max-retries 10 "
                     "--blobs-dir /logs/agent/pochi/blobs "
-                    "--stream-json /logs/agent/pochi/trajectory.jsonl "
+                    "--experimental-stream-trajectory /logs/agent/pochi/trajectory.jsonl "
                     "> >(tee /logs/agent/pochi/stdout.txt) "
                     "2> >(tee /logs/agent/pochi/stderr.txt >&2) "
                     "<<'EOF'\n"
@@ -129,8 +209,16 @@ class Pochi(BaseInstalledAgent):
                     "EOF"
                 ),
                 env=env,
-            ),
-        ]
+            )
+        finally:
+            # cleanup - best effort
+            try:
+                await self.exec_as_agent(
+                    environment,
+                    command="rm -f ~/.pochi/config.jsonc",
+                )
+            except Exception:
+                pass
 
     def _convert_pochi_to_atif(
         self, log_lines: list[str]
