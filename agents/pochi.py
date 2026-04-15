@@ -1,16 +1,12 @@
 import os
 import json
 import shlex
-import shutil
-import subprocess
 
 from harbor.models.agent.context import AgentContext
 from harbor.models.trial.paths import EnvironmentPaths
 from harbor.agents.installed.base import (
     BaseInstalledAgent,
     with_prompt_template,
-    CliFlag,
-    EnvVar,
 )
 from harbor.environments.base import BaseEnvironment
 from pydantic import BaseModel
@@ -113,12 +109,19 @@ class Pochi(BaseInstalledAgent):
     async def run(
         self, instruction: str, environment: BaseEnvironment, context: AgentContext
     ) -> None:
+        # Write the trial_id into "/logs/trial_id"
+        write_trial_id_command = (
+            f"echo {environment.session_id} > /logs/trial_id"
+        )
+
+        await self.exec_as_agent(
+            environment,
+            command=write_trial_id_command
+        )
+                
         model = self.model_name if self.model_name else "google/gemini-3-flash"
 
-        env = {
-            "POCHI_LOG": "debug",
-            "E2B_API_KEY": os.environ.get("E2B_API_KEY", ""),
-            "POCHI_API_KEY": os.environ.get("POCHI_API_KEY", ""),
+        config_env = {
             "OPENAI_API_KEY": os.environ.get("OPENAI_API_KEY", ""),
             "DEEPINFRA_API_KEY": os.environ.get("DEEPINFRA_API_KEY", ""),
             "ANTHROPIC_API_KEY": os.environ.get("ANTHROPIC_API_KEY", ""),
@@ -188,7 +191,7 @@ class Pochi(BaseInstalledAgent):
         await self.exec_as_agent(
             environment,
             command=setup_command,
-            env=env,
+            env=config_env,
         )
 
         try:
@@ -208,7 +211,6 @@ class Pochi(BaseInstalledAgent):
                     f"{instruction}\n"
                     "EOF"
                 ),
-                env=env,
             )
         finally:
             # cleanup - best effort
