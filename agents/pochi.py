@@ -153,13 +153,6 @@ class Pochi(BaseInstalledAgent):
             )
 
         config_json = """{
-  "vendors": {
-    "pochi": {
-      "credentials": {
-        "token": "POCHI_TOKEN"
-      }
-    }
-  },
   "providers": {
     "deepinfra": {
       "kind": "openai",
