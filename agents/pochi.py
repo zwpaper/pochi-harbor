@@ -200,7 +200,6 @@ class Pochi(BaseInstalledAgent):
             '-e "s/OPENAI_API_KEY/${OPENAI_API_KEY}/g" '
             '-e "s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g" '
             '-e "s/ANTHROPIC_API_KEY/${ANTHROPIC_API_KEY}/g" '
-            '-e "s/POCHI_TOKEN/${POCHI_TOKEN}/g" '
             "> ~/.pochi/config.jsonc\n"
             f"{config_json}\n"
             "EOF"
