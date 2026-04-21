@@ -364,7 +364,7 @@ class Pochi(BaseInstalledAgent):
                                 if current_tools
                                 else None,
                                 observation=obs,
-                                model_name=self.model_name or "google/gemini-3.1-pro",
+                                model_name=self.model_name or "google/gemini-3-flash",
                             )
                         )
                         step_id += 1
