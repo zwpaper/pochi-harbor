@@ -121,36 +121,7 @@ class Pochi(BaseInstalledAgent):
             "OPENAI_API_KEY": os.environ.get("OPENAI_API_KEY", ""),
             "DEEPINFRA_API_KEY": os.environ.get("DEEPINFRA_API_KEY", ""),
             "ANTHROPIC_API_KEY": os.environ.get("ANTHROPIC_API_KEY", ""),
-            "POCHI_TOKEN": os.environ.get("POCHI_TOKEN", ""),
-            "CROSSMINT_API_KEY": os.environ.get("CROSSMINT_API_KEY", ""),
-            "SIGNER_SECRET": os.environ.get(
-                "CROSSMINT_SIGNER_SECRET", os.environ.get("SIGNER_SECRET", "")
-            ),
-            "MODAL_TOKEN_ID": os.environ.get("MODAL_TOKEN_ID", ""),
-            "MODAL_TOKEN_SECRET": os.environ.get("MODAL_TOKEN_SECRET", ""),
-            "GCP_SA_KEY_JSON_B64": os.environ.get("GCP_SA_KEY_JSON_B64", ""),
-            "AUTUMN_API_KEY": os.environ.get("AUTUMN_API_KEY", ""),
-            "AUTUMN_SECRET_KEY": os.environ.get(
-                "AUTUMN_SECRET_KEY", os.environ.get("AUTUMN_API_KEY", "")
-            ),
         }
-
-        # Set up GCP credentials if available
-        gcp_b64 = os.environ.get("GCP_SA_KEY_JSON_B64", "")
-        if gcp_b64:
-            gcp_setup_cmd = (
-                "mkdir -p /tmp/gcloud && "
-                "printenv GCP_SA_KEY_JSON_B64 | base64 -d > /tmp/gcloud/sa-key.json && "
-                "chmod 644 /tmp/gcloud/sa-key.json && "
-                "gcloud auth activate-service-account --key-file=/tmp/gcloud/sa-key.json 2>/dev/null || true"
-            )
-            gcp_env = {"GCP_SA_KEY_JSON_B64": gcp_b64}
-            await self.exec_as_root(environment, command=gcp_setup_cmd, env=gcp_env)
-            await self.exec_as_agent(
-                environment,
-                command="gcloud auth activate-service-account --key-file=/tmp/gcloud/sa-key.json 2>/dev/null || true",
-                env=gcp_env,
-            )
 
         config_json = """{
   "providers": {
