@@ -331,12 +331,9 @@ class Pochi(BaseInstalledAgent):
                 current_text = []
 
                 def _flush_step():
-                    nonlocal \
-                        step_id, \
-                        current_reasoning, \
-                        current_tools, \
-                        current_observations, \
-                        current_text
+                    nonlocal step_id, current_reasoning
+                    nonlocal current_tools, current_observations
+                    nonlocal current_text
                     if (
                         current_tools
                         or current_reasoning
