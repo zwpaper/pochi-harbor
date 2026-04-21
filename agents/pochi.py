@@ -121,6 +121,7 @@ class Pochi(BaseInstalledAgent):
             "OPENAI_API_KEY": os.environ.get("OPENAI_API_KEY", ""),
             "DEEPINFRA_API_KEY": os.environ.get("DEEPINFRA_API_KEY", ""),
             "ANTHROPIC_API_KEY": os.environ.get("ANTHROPIC_API_KEY", ""),
+            "POCHI_TOKEN": os.environ.get("POCHI_TOKEN", ""),
             "CROSSMINT_API_KEY": os.environ.get("CROSSMINT_API_KEY", ""),
             "SIGNER_SECRET": os.environ.get(
                 "CROSSMINT_SIGNER_SECRET", os.environ.get("SIGNER_SECRET", "")
@@ -152,6 +153,13 @@ class Pochi(BaseInstalledAgent):
             )
 
         config_json = """{
+  "vendors": {
+    "pochi": {
+      "credentials": {
+        "token": "POCHI_TOKEN"
+      }
+    }
+  },
   "providers": {
     "deepinfra": {
       "kind": "openai",
@@ -199,6 +207,7 @@ class Pochi(BaseInstalledAgent):
             '-e "s/OPENAI_API_KEY/${OPENAI_API_KEY}/g" '
             '-e "s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g" '
             '-e "s/ANTHROPIC_API_KEY/${ANTHROPIC_API_KEY}/g" '
+            '-e "s/POCHI_TOKEN/${POCHI_TOKEN}/g" '
             "> ~/.pochi/config.jsonc\n"
             f"{config_json}\n"
             "EOF"
