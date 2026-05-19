@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import shlex
 import hashlib
@@ -120,8 +121,7 @@ class Pochi(BaseInstalledAgent):
     async def run(
         self, instruction: str, environment: BaseEnvironment, context: AgentContext
     ) -> None:
-        run_id = hashlib.md5(environment.session_id.encode("utf-8")).hexdigest()[:16]
-        # Write the run_id into "/logs/artifacts/run-id" and trial_id into "/logs/artifacts/trial_id"
+        run_id = "zr-" + re.sub(r"[^a-z0-9.-]", "-", environment.session_id.lower())
         write_ids_command = (
             f"echo {run_id} > /logs/artifacts/run-id && "
             f"echo {environment.session_id} > /logs/artifacts/trial_id"
@@ -131,11 +131,8 @@ class Pochi(BaseInstalledAgent):
         model = self.model_name if self.model_name else "google/gemini-3-flash"
 
         config_env = {
-            "POCHI_LOG": "debug",
-            "ZEALT_RUN_ID": run_id,
             "OPENAI_API_KEY": os.environ.get("OPENAI_API_KEY", ""),
             "DEEPINFRA_API_KEY": os.environ.get("DEEPINFRA_API_KEY", ""),
-            "ANTHROPIC_API_KEY": os.environ.get("ANTHROPIC_API_KEY", ""),
         }
 
         config_json = """{
@@ -153,16 +150,6 @@ class Pochi(BaseInstalledAgent):
         },
         "deepseek-ai/DeepSeek-V4-Pro": {
           "name": "DeepSeek-V4-Pro"
-        }
-      }
-    },
-    "anthropic": {
-      "kind": "openai",
-      "baseURL": "https://api.anthropic.com/v1",
-      "apiKey": "ANTHROPIC_API_KEY",
-      "models": {
-        "claude-opus-4-6": {
-          "name": "claude-opus-4-6"
         }
       }
     },
@@ -185,7 +172,6 @@ class Pochi(BaseInstalledAgent):
             "cat << 'EOF' | sed "
             '-e "s/OPENAI_API_KEY/${OPENAI_API_KEY}/g" '
             '-e "s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g" '
-            '-e "s/ANTHROPIC_API_KEY/${ANTHROPIC_API_KEY}/g" '
             "> ~/.pochi/config.jsonc\n"
             f"{config_json}\n"
             "EOF"
@@ -205,17 +191,21 @@ class Pochi(BaseInstalledAgent):
             env=config_env,
         )
 
+        eval_env = {
+            "POCHI_LOG": "debug",
+            "ZEALT_RUN_ID": run_id,
+        }
         try:
             await self.exec_as_agent(
                 environment,
                 command=(
-                    "if [ -f /bootstrap/test_initial_state.py ]; then "
-                    "pytest -s --log-cli-level=DEBUG /bootstrap/test_initial_state.py "
+                    "if [ -f /zealt/test_initial_state.py ]; then "
+                    "pytest -s --log-cli-level=DEBUG /zealt/test_initial_state.py "
                     "> >(tee /logs/agent/pochi/initial-test-stdout.txt) "
                     "2> >(tee /logs/agent/pochi/initial-test-stderr.txt >&2); "
                     "fi"
                 ),
-                env=config_env,
+                env=eval_env,
             )
         except Exception as e:
             raise InitialStateError("Initial state test failed") from e
@@ -236,7 +226,7 @@ class Pochi(BaseInstalledAgent):
                     f"{instruction}\n"
                     "EOF"
                 ),
-                env=config_env,
+                env=eval_env,
             )
         finally:
             # cleanup - best effort
