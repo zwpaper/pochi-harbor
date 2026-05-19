@@ -199,8 +199,8 @@ class Pochi(BaseInstalledAgent):
             await self.exec_as_agent(
                 environment,
                 command=(
-                    "if [ -f /zealt/test_initial_state.py ]; then "
-                    "pytest -s --log-cli-level=DEBUG /zealt/test_initial_state.py "
+                    "if [ -f /bootstrap/test_initial_state.py ]; then "
+                    "pytest -s --log-cli-level=DEBUG /bootstrap/test_initial_state.py "
                     "> >(tee /logs/agent/pochi/initial-test-stdout.txt) "
                     "2> >(tee /logs/agent/pochi/initial-test-stderr.txt >&2); "
                     "fi"
