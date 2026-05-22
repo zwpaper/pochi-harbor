@@ -121,7 +121,16 @@ class Pochi(BaseInstalledAgent):
     async def run(
         self, instruction: str, environment: BaseEnvironment, context: AgentContext
     ) -> None:
-        run_id = "zr-" + re.sub(r"[^a-z0-9.-]", "-", environment.session_id.lower())
+        # Prefer a compact run id using the session suffix after "__".
+        # Example: create_managed_index_py__vu8McuB -> zr-vu8mcub
+        session_suffix = environment.session_id.rsplit("__", 1)[-1]
+        normalized_suffix = re.sub(r"[^a-z0-9]", "", session_suffix.lower())
+        if not normalized_suffix:
+            raise ValueError(
+                "Could not derive run-id suffix from session_id: "
+                f"{environment.session_id!r}"
+            )
+        run_id = "zr-" + normalized_suffix
         write_ids_command = (
             f"echo {run_id} > /logs/artifacts/run-id && "
             f"echo {environment.session_id} > /logs/artifacts/trial_id"
