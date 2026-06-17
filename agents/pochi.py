@@ -29,6 +29,9 @@ from harbor.models.trial.paths import EnvironmentPaths
 class InitialStateError(Exception):
     pass
 
+class NoApiKeyError(Exception):
+    pass
+
 
 class ExecInput(BaseModel):
     command: str
@@ -65,7 +68,7 @@ class Pochi(BaseInstalledAgent):
         # some containers (returns the API URL as the "version" → 404).
         # Keep `bash -x` so any future install failure shows the resolved
         # version and download URL in the trace.
-        version_spec = f"pochi-{self._version}" if self._version else "pochi-v0.6.8"
+        version_spec = f"pochi-{self._version}" if self._version else "pochi-v0.6.14"
         await self.exec_as_agent(
             environment,
             command=(
@@ -121,22 +124,6 @@ class Pochi(BaseInstalledAgent):
     async def run(
         self, instruction: str, environment: BaseEnvironment, context: AgentContext
     ) -> None:
-        # Prefer a compact run id using the session suffix after "__".
-        # Example: create_managed_index_py__vu8McuB -> zr-vu8mcub
-        session_suffix = environment.session_id.rsplit("__", 1)[-1]
-        normalized_suffix = re.sub(r"[^a-z0-9]", "", session_suffix.lower())
-        if not normalized_suffix:
-            raise ValueError(
-                "Could not derive run-id suffix from session_id: "
-                f"{environment.session_id!r}"
-            )
-        run_id = "zr-" + normalized_suffix
-        write_ids_command = (
-            f"echo {run_id} > /logs/artifacts/run-id && "
-            f"echo {environment.session_id} > /logs/artifacts/trial_id"
-        )
-        await self.exec_as_agent(environment, command=write_ids_command)
-
         model = self.model_name if self.model_name else "google/gemini-3-flash"
 
         config_env = {
@@ -200,9 +187,13 @@ class Pochi(BaseInstalledAgent):
             env=config_env,
         )
 
+        pochi_api_key = os.environ.get("POCHI_API_KEY", "")
+        if not pochi_api_key:
+            raise NoApiKeyError("POCHI_API_KEY environment variable is not set.")
+
         eval_env = {
             "POCHI_LOG": "debug",
-            "ZEALT_RUN_ID": run_id,
+            "POCHI_API_KEY": pochi_api_key,
         }
         try:
             await self.exec_as_agent(
