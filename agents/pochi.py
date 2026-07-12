@@ -1,34 +1,33 @@
-import os
-import re
 import json
+import os
 import shlex
-import hashlib
-from packaging.version import Version
+from pathlib import PurePosixPath
 
-from harbor.models.agent.context import AgentContext
-from harbor.models.trial.paths import EnvironmentPaths
+from packaging.version import Version
+from pydantic import BaseModel
+
 from harbor.agents.installed.base import (
     BaseInstalledAgent,
     with_prompt_template,
 )
 from harbor.environments.base import BaseEnvironment
-from pydantic import BaseModel
-from pathlib import Path, PurePosixPath
-
+from harbor.models.agent.context import AgentContext
 from harbor.models.trajectories import (
-    Trajectory,
-    Step,
-    ToolCall,
+    Agent,
+    FinalMetrics,
     Observation,
     ObservationResult,
-    FinalMetrics,
-    Agent,
+    Step,
+    ToolCall,
+    Trajectory,
 )
 from harbor.models.trial.paths import EnvironmentPaths
+from harbor.utils.env import resolve_env_vars
 
 
 class InitialStateError(Exception):
     pass
+
 
 class NoApiKeyError(Exception):
     pass
@@ -51,7 +50,7 @@ class Pochi(BaseInstalledAgent):
         return PurePosixPath(EnvironmentPaths.agent_dir / "trajectory.json")
 
     def get_version_command(self) -> str | None:
-        return 'export POCHI_LOG=info pochi; pochi --version'
+        return "export POCHI_LOG=info pochi; pochi --version"
 
     def parse_version(self, stdout: str) -> str:
         return stdout.strip()
@@ -141,6 +140,16 @@ class Pochi(BaseInstalledAgent):
           "name": "gpt-5.4"
         }
       }
+    },
+    "minimax": {
+      "kind": "openai",
+      "baseURL": "https://api.minimax.io/v1",
+      "apiKey": "MINIMAX_API_KEY",
+      "models": {
+        "MiniMax-M3": {
+          "name": "m3"
+        }
+      }
     }
   }
 }"""
@@ -151,6 +160,7 @@ class Pochi(BaseInstalledAgent):
             "cat << 'EOF' | sed "
             '-e "s/OPENAI_API_KEY/${OPENAI_API_KEY}/g" '
             '-e "s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g" '
+            '-e "s/MINIMAX_API_KEY/${MINIMAX_API_KEY}/g" '
             "> ~/.pochi/config.jsonc\n"
             f"{config_json}\n"
             "EOF"
@@ -178,6 +188,8 @@ class Pochi(BaseInstalledAgent):
             "POCHI_LOG": "debug",
             "POCHI_API_KEY": pochi_api_key,
         }
+        eval_env.update(resolve_env_vars(environment.task_env_config.env))
+
         try:
             await self.exec_as_agent(
                 environment,
@@ -199,22 +211,33 @@ class Pochi(BaseInstalledAgent):
             else ""
         )
 
+        pochi_command = (
+            "pochi "
+            f"--model {model} "
+            "--max-steps 200 "
+            "--max-retries 10 "
+            "--blobs-dir /logs/agent/pochi/blobs "
+            "--experimental-stream-trajectory /logs/agent/pochi/trajectory.jsonl "
+            f"{strip_duplicates_flag}"
+            "> >(tee /logs/agent/pochi/stdout.txt) "
+            "2> >(tee /logs/agent/pochi/stderr.txt >&2) "
+            "<<'EOF'\n"
+            f"{instruction}\n"
+            "EOF"
+        )
+
         try:
             await self.exec_as_agent(
                 environment,
                 command=(
-                    "pochi "
-                    f"--model {model} "
-                    "--max-steps 200 "
-                    "--max-retries 10 "
-                    "--blobs-dir /logs/agent/pochi/blobs "
-                    "--experimental-stream-trajectory /logs/agent/pochi/trajectory.jsonl "
-                    f"{strip_duplicates_flag}"
-                    "> >(tee /logs/agent/pochi/stdout.txt) "
-                    "2> >(tee /logs/agent/pochi/stderr.txt >&2) "
-                    "<<'EOF'\n"
-                    f"{instruction}\n"
-                    "EOF"
+                    "cat > /tmp/pochi_cmd.sh << 'CMD_EOF'\n"
+                    "set -o pipefail\n"
+                    f"{pochi_command}\n"
+                    "CMD_EOF\n"
+                    "setsid --wait bash /tmp/pochi_cmd.sh &\n"
+                    "SETSID_PID=$!\n"
+                    "echo $SETSID_PID > /tmp/setsid_bash_pochi_cmd.pid\n"
+                    "wait $SETSID_PID 2>/dev/null"
                 ),
                 env=eval_env,
             )
@@ -223,7 +246,16 @@ class Pochi(BaseInstalledAgent):
             try:
                 await self.exec_as_agent(
                     environment,
-                    command="rm -f ~/.pochi/config.jsonc",
+                    command=(
+                        "if [ -f /tmp/setsid_bash_pochi_cmd.pid ]; then\n"
+                        "SETSID_PID=$(cat /tmp/setsid_bash_pochi_cmd.pid)\n"
+                        # Kill the entire process group (using the negative PID syntax)
+                        "kill -TERM -- -$SETSID_PID 2>/dev/null || true\n"
+                        "sleep 2\n"
+                        "kill -9 -- -$SETSID_PID 2>/dev/null || true\n"
+                        "fi\n"
+                        "rm -f ~/.pochi/config.jsonc /tmp/pochi_cmd.sh /tmp/setsid_bash_pochi_cmd.pid"
+                    ),
                 )
             except Exception:
                 pass
@@ -326,9 +358,9 @@ class Pochi(BaseInstalledAgent):
                                 source="agent",
                                 message=message_content,
                                 reasoning_content=reasoning_content,
-                                tool_calls=list(current_tools)
-                                if current_tools
-                                else None,
+                                tool_calls=(
+                                    list(current_tools) if current_tools else None
+                                ),
                                 observation=obs,
                                 model_name=self.model_name or "google/gemini-3-flash",
                             )
