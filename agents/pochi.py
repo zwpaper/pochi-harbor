@@ -142,12 +142,12 @@ class Pochi(BaseInstalledAgent):
       }
     },
     "minimax": {
-      "kind": "openai",
-      "baseURL": "https://api.minimax.io/v1",
+      "kind": "minimax",
       "apiKey": "MINIMAX_API_KEY",
       "models": {
         "MiniMax-M3": {
-          "name": "m3"
+          "maxTokens": 10000,
+          "contextWindow": 1000000
         }
       }
     }
@@ -212,7 +212,7 @@ class Pochi(BaseInstalledAgent):
         )
 
         pochi_command = (
-            "pochi "
+            "cat <<'EOF' | pochi "
             f"--model {model} "
             "--max-steps 200 "
             "--max-retries 10 "
@@ -220,8 +220,7 @@ class Pochi(BaseInstalledAgent):
             "--experimental-stream-trajectory /logs/agent/pochi/trajectory.jsonl "
             f"{strip_duplicates_flag}"
             "> >(tee /logs/agent/pochi/stdout.txt) "
-            "2> >(tee /logs/agent/pochi/stderr.txt >&2) "
-            "<<'EOF'\n"
+            "2> >(tee /logs/agent/pochi/stderr.txt >&2)\n"
             f"{instruction}\n"
             "EOF"
         )
@@ -260,6 +259,41 @@ class Pochi(BaseInstalledAgent):
             except Exception:
                 pass
 
+    def _calculate_tokens(self, log_lines: list[str]) -> tuple[int, int, int, int]:
+        total_input = 0
+        total_total = 0
+        total_cache = 0
+        first_prompt = 0
+        seen = set()
+
+        for line in log_lines:
+            if not line.strip():
+                continue
+            try:
+                msg = json.loads(line)
+                if msg.get("type") == "message-metadata" and msg.get("role") == "assistant":
+                    msg_id = msg.get("messageId", "")
+                    metadata = msg.get("metadata", {})
+                    started_at = metadata.get("startedAt", "")
+                    finished_at = metadata.get("finishedAt", "")
+
+                    key = f"{msg_id}_{started_at}_{finished_at}"
+                    if key in seen:
+                        continue
+
+                    if not seen:
+                        first_prompt = metadata.get("inputTokens", 0) + metadata.get("cacheReadTokens", 0)
+
+                    seen.add(key)
+
+                    total_total += metadata.get("totalTokens", 0)
+                    total_cache += metadata.get("cacheReadTokens", 0)
+                    total_input += metadata.get("inputTokens", 0)
+            except Exception:
+                continue
+
+        return total_input, total_total, total_cache, first_prompt
+
     def _convert_pochi_to_atif(self, log_lines: list[str]) -> Trajectory | None:
         """Convert Pochi trajectory format to ATIF format."""
         if not log_lines:
@@ -268,13 +302,9 @@ class Pochi(BaseInstalledAgent):
         steps: list[Step] = []
         step_id = 1
 
-        total_input_tokens = 0
-        total_output_tokens = 0
-        total_cached_tokens = 0
+        total_input_tokens, total_total_tokens, total_cached_read_tokens, first_prompt_tokens = self._calculate_tokens(log_lines)
+
         session_id = "unknown"
-        total_total_tokens = 0
-        total_system_tokens = 0
-        total_tools_tokens = 0
 
         for line in log_lines:
             if not line.strip():
@@ -306,21 +336,6 @@ class Pochi(BaseInstalledAgent):
                 )
                 step_id += 1
             elif role == "assistant":
-                metadata = msg.get("metadata", {})
-
-                total_tokens = metadata.get("totalTokens", 0)
-                total_total_tokens += total_tokens
-                system_tokens = metadata.get("systemPromptTokens", 0)
-                total_system_tokens += system_tokens
-                tools_tokens = metadata.get("toolsTokens", 0)
-                total_tools_tokens += tools_tokens
-
-                prompt_tokens = system_tokens + tools_tokens
-                completion_tokens = max(total_tokens - prompt_tokens, 0)
-
-                total_input_tokens += prompt_tokens
-                total_output_tokens += completion_tokens
-
                 parts = msg.get("parts", [])
 
                 current_reasoning = []
@@ -411,16 +426,14 @@ class Pochi(BaseInstalledAgent):
         if not steps:
             return None
 
+        total_prompt = first_prompt_tokens
+        total_completion = total_total_tokens - total_input_tokens - total_cached_read_tokens
+
         final_metrics = FinalMetrics(
-            total_prompt_tokens=total_input_tokens,
-            total_completion_tokens=total_output_tokens,
-            total_cached_tokens=total_cached_tokens,
+            total_prompt_tokens=total_prompt,
+            total_completion_tokens=total_completion,
+            total_cached_tokens=total_cached_read_tokens,
             total_steps=len(steps),
-            extra={
-                "total_tokens": total_total_tokens,
-                "system_tokens": total_system_tokens,
-                "tools_tokens": total_tools_tokens,
-            },
         )
 
         trajectory = Trajectory(
@@ -449,24 +462,10 @@ class Pochi(BaseInstalledAgent):
             return
 
         # Calculate token counts for context
-        n_input_tokens = 0
-        n_output_tokens = 0
-        n_cache_tokens = 0
+        n_input_tokens, n_total_tokens, n_cache_tokens, n_first_prompt = self._calculate_tokens(log_lines)
 
-        for line in log_lines:
-            if not line.strip():
-                continue
-            try:
-                msg = json.loads(line)
-                if msg.get("role") == "assistant":
-                    metadata = msg.get("metadata", {})
-                    # Pochi log only has totalTokens in metadata currently
-                    n_output_tokens += metadata.get("totalTokens", 0)
-            except Exception:
-                continue
-
-        context.n_input_tokens = n_input_tokens
-        context.n_output_tokens = n_output_tokens
+        context.n_input_tokens = n_first_prompt
+        context.n_output_tokens = n_total_tokens - n_input_tokens - n_cache_tokens
         context.n_cache_tokens = n_cache_tokens
 
         try:
